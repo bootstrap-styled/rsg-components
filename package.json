@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/rsg-components",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Create layout for react-styleguidist using Bootstrap-Styled. Boostrap Styled rsg-components use the @bootstrap-styled/v4 UI components instead of the original rsg-components.",
   "main": "lib/index.js",
   "homepage": "https://bootstrap-styled.yeutech.com/rsg-components",
