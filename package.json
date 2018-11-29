@@ -22,7 +22,7 @@
     "build:lib:watch": "npm run build:lib -- --watch",
     "test": "npm run lint && npm run test:web && npm run test:doc",
     "test:web": "NODE_ENV=test TEST_REPORT_PATH=reports jest --coverage",
-    "test:doc": "npm run styleguild:build",
+    "test:doc": "npm run styleguide:build",
     "test:clean": "rimraf ./coverage",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src",
@@ -325,10 +325,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 100,
-        "branches": 100,
-        "functions": 100,
-        "lines": 100
+        "statements": 68,
+        "branches": 82,
+        "functions": 22,
+        "lines": 69
       }
     },
     "moduleDirectories": [
@@ -343,8 +343,15 @@
     "transformIgnorePatterns": [
       "<rootDir>/node_modules"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/testing/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/internals/testing/fileMock.js"
+    }
   },
   "declinationId": "bs",
-  "contributors": []
+  "contributors": [
+    "Alexander Janet <alexander.janet@yeutech.vn>",
+    "Adrien Gadaud <adrien.gadaud@yeutech.vn>"
+  ]
 }
