@@ -119,7 +119,7 @@ const SideBarUnstyled = (props) => {
 SideBarUnstyled.defaultProps = defaultProps;
 SideBarUnstyled.propTypes = propTypes;
 
-const SideBar = styled(SideBarUnstyled)` 
+const SideBar = styled(SideBarUnstyled)`
   ${(props) => `
     &.navigation {      
       ${bp.up('xs', props.theme['$grid-breakpoints'], `

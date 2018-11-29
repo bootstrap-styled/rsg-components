@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import omit from 'lodash.omit';
-import { makeTheme } from 'bootstrap-styled/lib/theme';
 import bp from '@bootstrap-styled/css-mixins/lib/breakpoints';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 import Fa from '@bootstrap-styled/v4/lib/Fa';
@@ -207,7 +206,7 @@ class StyleGuideRendererUnstyled extends Component {
   }
 }
 
-const StyleGuideRenderer = styled(StyleGuideRendererUnstyled)` 
+const StyleGuideRendererStyled = styled(StyleGuideRendererUnstyled)` 
   ${(props) => `
     &.rsg-styleguide {
       @media print{
@@ -404,10 +403,10 @@ const StyleGuideRenderer = styled(StyleGuideRendererUnstyled)`
  `}
 `;
 
-StyleGuideRenderer.defaultProps = defaultProps;
-StyleGuideRenderer.propTypes = propTypes;
+StyleGuideRendererStyled.defaultProps = defaultProps;
+StyleGuideRendererStyled.propTypes = propTypes;
 
-class StyleGuideRendererWithProvider extends React.Component { // eslint-disable-line react/prefer-stateless-function, react/no-multi-comp
+class StyleGuideRenderer extends React.Component { // eslint-disable-line react/prefer-stateless-function, react/no-multi-comp
   render() {
     const { theme, reset, injectGlobal, ...rest } = this.props;
     return (
@@ -416,13 +415,13 @@ class StyleGuideRendererWithProvider extends React.Component { // eslint-disable
         reset={reset}
         injectGlobal={injectGlobal}
       >
-        <StyleGuideRenderer {...rest} />
+        <StyleGuideRendererStyled {...rest} />
       </BootstrapProvider>
     );
   }
 }
 
-StyleGuideRendererWithProvider.defaultProps = defaultProps;
-StyleGuideRendererWithProvider.propTypes = propTypes;
+StyleGuideRenderer.defaultProps = defaultProps;
+StyleGuideRenderer.propTypes = propTypes;
 
-export default StyleGuideRendererWithProvider;
+export default StyleGuideRenderer;

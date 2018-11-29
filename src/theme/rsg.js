@@ -200,7 +200,7 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   v['$rsg-tab-button-focus-not-active-outline'] = u['$rsg-tab-button-focus-not-active-outline'] || '0';
   v['$rsg-tab-button-children-isolate'] = u['$rsg-tab-button-children-isolate'] || 'false';
   v['$rsg-tab-button-children-margin-left'] = u['$rsg-tab-button-children-margin-left'] || '0';
-  v['$rsg-tab-button-border-bottom'] = u['$rsg-tab-button-border-bottom'] || '2 #f28a25 solid';
+  v['$rsg-tab-button-border-bottom'] = u['$rsg-tab-button-border-bottom'] || '2px #f28a25 solid';
   // Props table
   v['$rsg-name-word-wrap'] = u['$rsg-name-word-wrap'] || 'break-word';
   v['$rsg-name-font-size'] = u['$rsg-name-font-size'] || {

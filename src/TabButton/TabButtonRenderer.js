@@ -28,7 +28,7 @@ export const defaultProps = {
       '$rsg-tab-button-focus-not-active-outline': '0',
       '$rsg-tab-button-children-isolate': 'false',
       '$rsg-tab-button-children-margin-left': '8px',
-      '$rsg-tab-button-border-bottom': '2 #f28a25 solid',
+      '$rsg-tab-button-border-bottom': '2px #f28a25 solid',
     },
   },
 };

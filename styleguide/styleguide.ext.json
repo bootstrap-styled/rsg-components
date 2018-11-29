@@ -30,7 +30,13 @@
     },
     {
       "name": "UI components",
-      "description": "test"
+      "content": "docs/ui.md",
+      "sections": [
+        {
+          "name": "StyleGuideRenderer",
+          "components": "src/StyleGuide/StyleGuideRenderer.js"
+        }
+      ]
     },
     {
       "name": "Contribute",

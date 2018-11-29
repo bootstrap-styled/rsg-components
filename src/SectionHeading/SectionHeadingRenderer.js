@@ -10,6 +10,7 @@ import mapToCssModules from 'map-to-css-modules/lib';
 import Heading from '../Heading';
 
 export const defaultProps = {
+  href: '#',
   theme: {
     styleguide: {
       '$rsg-section-heading-display': 'flex',
