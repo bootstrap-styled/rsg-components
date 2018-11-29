@@ -55,6 +55,10 @@
     {
       "name": "Code of conduct",
       "content": "CODE_OF_CONDUCT.md"
+    },
+    {
+      "name": "Changelog",
+      "content": "CHANGELOG.md"
     }
   ]
 }
