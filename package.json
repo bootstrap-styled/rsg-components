@@ -1,7 +1,7 @@
 {
   "name": "@bootstrap-styled/rsg-components",
-  "version": "1.0.0",
-  "description": "Create layout for react-styleguidist using Bootstrap-Styled. Boostrap Styled rsg-components use the @bootstrap-styled/v4 UI components instead of the original rsg-components.",
+  "version": "0.0.0-development",
+  "description": "Create documentation layouts for your react-styleguidist using Bootstrap-Styled rsg-component. Boostrap Styled rsg-components use the @bootstrap-styled/v4 for recreating the original rsg-components.",
   "main": "lib/index.js",
   "homepage": "https://bootstrap-styled.yeutech.com/rsg-components",
   "engines": {
@@ -47,7 +47,7 @@
     "rsg",
     "components"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb",
@@ -353,5 +353,22 @@
   "contributors": [
     "Alexander Janet <alexander.janet@yeutech.vn>",
     "Adrien Gadaud <adrien.gadaud@yeutech.vn>"
-  ]
+  ],
+  "transitive": {
+    "name": "rsg-components",
+    "scope": "bootstrap-styled",
+    "scopedName": "@bootstrap-styled/rsg-components",
+    "homepage": "https://bootstrap-styled.github.io/rsg-components",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bootstrap-styled/rsg-components.git"
+    },
+    "bugs": {
+      "url": "https://github.com/bootstrap-styled/rsg-components/issues"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org"
+    }
+  }
 }
