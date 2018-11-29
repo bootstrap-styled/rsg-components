@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.1...v1.0.2) (2018-11-29)
+
+
+### Bug Fixes
+
+* **release:** GitHub release https://github.com/bootstrap-styled/rsg-components ([4b1945d](https://github.com/bootstrap-styled/rsg-components/commit/4b1945d))
+
 ## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/compare/v1.0.0...v1.0.1) (2018-11-29)
 
 
