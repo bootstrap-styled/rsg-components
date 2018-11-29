@@ -121,14 +121,12 @@ SideBarUnstyled.propTypes = propTypes;
 
 const SideBar = styled(SideBarUnstyled)` 
   ${(props) => `
-    &.navigation {
-      ${boxShadow(props.shadow || props.theme['$enable-shadows'], `
-        ${bp.up('xs', props.theme['$grid-breakpoints'], `
-           box-shadow: ${props.theme.styleguide['$rsg-sidebar-box-shadow'].xs};
-        `)}
-        ${bp.up('sm', props.theme['$grid-breakpoints'], `
-          box-shadow: ${props.theme.styleguide['$rsg-sidebar-box-shadow'].sm};
-        `)}
+    &.navigation {      
+      ${bp.up('xs', props.theme['$grid-breakpoints'], `
+        ${boxShadow(props.shadow || props.theme['$enable-shadows'], props.theme.styleguide['$rsg-sidebar-box-shadow'].xs)}
+      `)}
+      ${bp.up('sm', props.theme['$grid-breakpoints'], `
+        ${boxShadow(props.shadow || props.theme['$enable-shadows'], props.theme.styleguide['$rsg-sidebar-box-shadow'].sm)}
       `)}
       .navigation-logo {
         color: white;

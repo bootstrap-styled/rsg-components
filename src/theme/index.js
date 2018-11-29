@@ -39,14 +39,25 @@ import { defaultProps as defaultPropsWelcome } from '../Welcome/WelcomeRenderer'
 
 import { makeTheme as makeThemeRsg } from './rsg';
 const makeTheme = createMakeTheme([
-  makeThemeRsg,
-  makeThemeBootstrapStyled,
+  toMakeTheme(makeThemeRsg({
+    styleguide: {
+      '$rsg-sidebar-box-shadow': {
+        xs: 'rgba(0, 0, 0, 0.15) 1px 0px 5px 2px',
+        md: 'rgba(0, 0, 0, 0.15) 1px 0px 5px 2px',
+      },
+    },
+  })),
+  toMakeTheme(makeThemeBootstrapStyled({
+    '$enable-shadows': true,
+  })),
   toMakeTheme(makeThemeNavigationStyleguide({
-    '$nav-styleguide-bg-color': 'white',
-    '$nav-styleguide-border': '1px solid #CCC',
-    '$nav-styleguide-width': {
-      sm: '100%',
-      md: '260px',
+    navigationStyleguide: {
+      '$nav-styleguide-bg-color': 'white',
+      '$nav-styleguide-border': '1px solid #CCC',
+      '$nav-styleguide-width': {
+        sm: '100%',
+        md: '260px',
+      },
     },
   })),
   toMakeTheme(defaultPropsArgument.theme),
