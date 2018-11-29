@@ -24,9 +24,9 @@ export const defaultProps = {
       '$rsg-tab-button-hover-focus-outline': '0',
       '$rsg-tab-button-hover-focus-color': '#f28a25',
       '$rsg-tab-button-hover-focus-transition': 'color 150ms ease-in',
-      '$rsg-tab-button-focus-not-active-isolate': 'false',
+      '$rsg-tab-button-focus-not-active-isolate': 'auto',
       '$rsg-tab-button-focus-not-active-outline': '0',
-      '$rsg-tab-button-children-isolate': 'false',
+      '$rsg-tab-button-children-isolate': 'auto',
       '$rsg-tab-button-children-margin-left': '8px',
       '$rsg-tab-button-border-bottom': '2px #f28a25 solid',
     },
@@ -87,7 +87,17 @@ const TabButtonRendererUnstyled = (props) => {
     children,
     cssModule,
     ...attributes
-  } = omit(props, ['theme', 'pathLine', 'hasExamples']);
+  } = omit(props, [
+    'theme',
+    'pathLine',
+    'hasExamples',
+    'filepath',
+    'slug',
+    'module',
+    'props',
+    'metadata',
+    'name',
+  ]);
 
   return (
     <Button
