@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Create documentation layouts for your react-styleguidist using Bootstrap-Styled rsg-component. Boostrap Styled rsg-components use the @bootstrap-styled/v4 for recreating the original rsg-components.",
   "main": "lib/index.js",
-  "homepage": "https://bootstrap-styled.yeutech.com/rsg-components",
+  "homepage": "https://bootstrap-styled.github.io/rsg-components",
   "engines": {
     "node": ">=8"
   },
@@ -29,15 +29,14 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "postinstall": "node -e \"console.log('\\u001b[31m@bootstrap-styled/rsg-components is deprecated, use @bootstrap-styled/rsg-components instead.')\" || exit 0"
+    "styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
-    "url": "https://module.kopaxgroup.com/bootstrap-styled/rsg-components.git"
+    "url": "https://github.com/bootstrap-styled/rsg-components.git"
   },
   "bugs": {
-    "url": "https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/issues"
+    "url": "https://github.com/bootstrap-styled/rsg-components/issues"
   },
   "keywords": [
     "bootstrap",
@@ -183,17 +182,10 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@semantic-release/changelog": "^3.0.1",
-    "@semantic-release/exec": "^3.3.0",
     "@semantic-release/git": "^7.0.5",
-    "@semantic-release/gitlab": "^3.0.5",
+    "@semantic-release/github": "^5.2.5",
     "@semantic-release/npm": "^5.1.1",
     "@yeutech-lab/rollup-umd-documentation": "^2.4.5",
-    "@yeutech/rollup-umd-ci-build": "^1.0.5",
-    "@yeutech/rollup-umd-ci-deploy": "^1.0.7",
-    "@yeutech/rollup-umd-ci-release": "^1.0.13",
-    "@yeutech/rollup-umd-ci-release-transitive": "^1.1.33",
-    "@yeutech/rollup-umd-ci-test": "^1.0.6",
-    "@yeutech/rollup-umd-scripts": "^0.18.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.4.2",
@@ -256,32 +248,20 @@
     "styled-components": "^4.1.1"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "tag": "latest",
-    "registry": "https://npm.kopaxgroup.com"
+    "access": "public"
   },
   "release": {
     "branch": "master",
-    "success": false,
-    "fail": false,
     "npmPublish": true,
     "verifyConditions": [
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive verify"
-      },
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/git",
-      {
-        "path": "@semantic-release/gitlab",
-        "gitlabUrl": "https://module.kopaxgroup.com"
-      }
+      "@semantic-release/github"
     ],
     "prepare": [
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive prepare"
-      },
       "@semantic-release/changelog",
       "@semantic-release/npm",
       {
@@ -298,12 +278,49 @@
     "publish": [
       "@semantic-release/npm",
       {
-        "path": "@semantic-release/gitlab",
-        "gitlabUrl": "https://module.kopaxgroup.com"
-      },
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive publish ${nextRelease.version}"
+        "path": "@semantic-release/github",
+        "assets": [
+          {
+            "path": "package.json"
+          },
+          {
+            "path": "LICENSE.md"
+          },
+          {
+            "path": "CHANGELOG.md"
+          },
+          {
+            "path": "README.md"
+          },
+          {
+            "path": "dist/*.esm.js",
+            "label": "ES module"
+          },
+          {
+            "path": "dist/*.esm.js.map",
+            "label": "ES module source map"
+          },
+          {
+            "path": "dist/*.min.js",
+            "label": "UMD compressed"
+          },
+          {
+            "path": "dist/*.min.js.map",
+            "label": "UMD compressed source map"
+          },
+          {
+            "path": "dist/*.cjs.min.js",
+            "label": "CJS compressed"
+          },
+          {
+            "path": "dist/*.cjs.min.js.map",
+            "label": "CJS compressed source map"
+          },
+          {
+            "path": "lib/*.js",
+            "label": "CJS folder"
+          }
+        ]
       }
     ]
   },
@@ -354,22 +371,5 @@
   "contributors": [
     "Alexander Janet <alexander.janet@yeutech.vn>",
     "Adrien Gadaud <adrien.gadaud@yeutech.vn>"
-  ],
-  "transitive": {
-    "name": "rsg-components",
-    "scope": "bootstrap-styled",
-    "scopedName": "@bootstrap-styled/rsg-components",
-    "homepage": "https://bootstrap-styled.github.io/rsg-components",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/bootstrap-styled/rsg-components.git"
-    },
-    "bugs": {
-      "url": "https://github.com/bootstrap-styled/rsg-components/issues"
-    },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org"
-    }
-  }
+  ]
 }

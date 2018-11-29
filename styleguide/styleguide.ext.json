@@ -60,5 +60,9 @@
       "name": "Changelog",
       "content": "CHANGELOG.md"
     }
-  ]
+  ],
+  "ribbon": {
+    "url": "",
+    "text": "Fork us on GitHub"
+  }
 }
