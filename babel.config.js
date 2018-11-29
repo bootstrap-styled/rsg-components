@@ -17,10 +17,12 @@ module.exports = merge({
   ],
   plugins: [
     '@babel/plugin-transform-runtime',
+    'babel-plugin-styled-components',
     '@babel/plugin-transform-async-to-generator',
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-syntax-import-meta',
+    '@babel/plugin-proposal-export-default-from',
     '@babel/plugin-proposal-json-strings',
     [
       '@babel/plugin-proposal-decorators',
@@ -39,6 +41,7 @@ module.exports = merge({
     test: {
       plugins: [
         '@babel/plugin-transform-modules-commonjs',
+        '@babel/plugin-syntax-dynamic-import',
         'babel-plugin-dynamic-import-node',
       ],
     },

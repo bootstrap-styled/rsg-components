@@ -7,13 +7,13 @@ Create layout for react-styleguidist using Bootstrap-Styled. Boostrap Styled rsg
 
 **Master**
 
-[![build status](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/badges/master/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/commits/master)
-[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/badges/master/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/commits/master)
+[![build status](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/badges/master/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/commits/master)
+[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/badges/master/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/commits/master)
 
 **Dev**
 
-[![build status](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/badges/dev/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/commits/dev)
-[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/badges/dev/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/commits/dev)
+[![build status](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/badges/dev/build.svg)](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/commits/dev)
+[![coverage report](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/badges/dev/coverage.svg)](https://module.kopaxgroup.com/bootstrap-styled/react-styleguidist/lib/rsg-components/commits/dev)
 
 
 ## Table of Contents
