@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/rsg-components",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "Create documentation layouts for your react-styleguidist using Bootstrap-Styled rsg-component. Boostrap Styled rsg-components use the @bootstrap-styled/v4 for recreating the original rsg-components.",
   "main": "lib/index.js",
   "homepage": "https://bootstrap-styled.yeutech.com/rsg-components",
@@ -29,7 +29,8 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@bootstrap-styled/rsg-components is deprecated, use @bootstrap-styled/rsg-components instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,11 @@
+## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/compare/v1.0.0...v1.0.1) (2018-11-29)
+
+
+### Bug Fixes
+
+* **doc:** added more doc ([dce269d](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/commit/dce269d))
+* **publish:** set to protected publishing ([d6b93ce](https://module.kopaxgroup.com/bootstrap-styled/rsg-components/commit/d6b93ce))
+
 # 1.0.0 (2018-11-29)
 
 
