@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.2...v1.0.3) (2018-11-30)
+
+
+### Bug Fixes
+
+* **bugs:** fix a few bugs in console when using StyleGuideRenderer without logos ([f068ef9](https://github.com/bootstrap-styled/rsg-components/commit/f068ef9))
+
 ## [1.0.2](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.1...v1.0.2) (2018-11-29)
 
 
