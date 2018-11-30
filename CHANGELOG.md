@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.4...v1.0.5) (2018-11-30)
+
+
+### Bug Fixes
+
+* **ribbon:** added ribbon ([26c9323](https://github.com/bootstrap-styled/rsg-components/commit/26c9323))
+* **theme:** export makeTheme ([396323e](https://github.com/bootstrap-styled/rsg-components/commit/396323e))
+
 ## [1.0.4](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.3...v1.0.4) (2018-11-30)
 
 
