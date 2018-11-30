@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.3...v1.0.4) (2018-11-30)
+
+
+### Bug Fixes
+
+* **documentation:** fix documentation and a few props ([d4e78a7](https://github.com/bootstrap-styled/rsg-components/commit/d4e78a7))
+
 ## [1.0.3](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.2...v1.0.3) (2018-11-30)
 
 
