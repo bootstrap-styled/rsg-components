@@ -4,7 +4,7 @@ import { makeTheme as makeThemeNavigationStyleguide } from '@bootstrap-styled/na
 
 import { makeTheme as makeThemeRsg } from './rsg';
 
-const makeTheme = createMakeTheme([
+export const makeTheme = createMakeTheme([
   toMakeTheme(makeThemeNavigationStyleguide({
     navigationStyleguide: {
       '$nav-styleguide-bg-color': 'white',
