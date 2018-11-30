@@ -11,6 +11,7 @@ import mapToCssModules from 'map-to-css-modules/lib';
 
 export const defaultProps = {
   logo: {
+    text: null,
     logo: null,
     href: 'https://bootstrap-styled.github.io/rsg-components',
     target: '_blank',
@@ -35,16 +36,23 @@ export const propTypes = {
   className: PropTypes.string, // eslint-disable-line react/require-default-props
   /** Logo attributes in order to render logo. */
   logo: PropTypes.shape({
+    /** Text to be displayed with/instead the logo */
+    text: PropTypes.string,
+    /** webpack loaded images or <img /> directly */
     logo: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
     ]).isRequired,
+    /** link for the logo */
     href: PropTypes.string,
+    /** link target */
     target: PropTypes.string,
+    /** alternative text for the logo */
     alt: PropTypes.string,
   }),
-  /** Theme variables. Can be: */
+  /** bootstrap styled theme */
   theme: PropTypes.shape({
+    /** bootstrap styled scope for our variables */
     styleguide: PropTypes.shape({
       '$rsg-footer-margin': PropTypes.string,
       '$rsg-footer-float': PropTypes.string,
@@ -61,6 +69,12 @@ export const propTypes = {
   cssModule: PropTypes.object, // eslint-disable-line react/require-default-props
 };
 
+/**
+ * The FooterRenderer gives you a few way to customize it
+ * @param props
+ * @returns {*}
+ * @constructor
+ */
 const FooterRendererUnstyled = (props) => {
   const {
     className,
@@ -73,25 +87,22 @@ const FooterRendererUnstyled = (props) => {
       className={mapToCssModules(cn(className, 'rsg-footer', cssModule))}
       {...attributes}
     >
-      {logo.logo && typeof logo.logo === 'string' ? (
-        <div>
-          {logo.text && (
-            <span>{logo.text}</span>
-          )}
-          <A
-            href={logo.href}
-            target={logo.target}
+      {logo.text && <span>{logo.text}</span>}
+      {typeof logo.logo === 'string' && (
+        <A
+          href={logo.href}
+          target={logo.target}
+          alt={logo.alt}
+        >
+          <Img
+            className="rsg-footer-img"
+            src={`data:image/png;base64,${logo.logo}`}
+            height={logo.height}
             alt={logo.alt}
-          >
-            <Img
-              className="rsg-footer-img"
-              src={`data:image/png;base64,${logo.logo}`}
-              height={logo.height}
-              alt={logo.alt}
-            />
-          </A>
-        </div>
-      ) : (
+          />
+        </A>
+      )}
+      {typeof logo.logo !== 'string' && logo.logo && (
         <A
           href={logo.href}
           target={logo.target}
@@ -135,4 +146,5 @@ const FooterRenderer = styled(FooterRendererUnstyled)`
 FooterRenderer.defaultProps = defaultProps;
 FooterRenderer.propTypes = propTypes;
 
+/** @component */
 export default FooterRenderer;

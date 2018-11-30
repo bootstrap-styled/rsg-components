@@ -34,6 +34,7 @@ export const defaultProps = {
     },
   },
   shadow: true,
+  version: null,
 };
 
 export const propTypes = {
@@ -64,14 +65,19 @@ to-css-modules" target="_blank">here</a>.
   cssModule: PropTypes.object, // eslint-disable-line react/require-default-props
   /** Logo attributes in order to render logo. */
   logo: PropTypes.shape({
+    /** a webpack import or the <img /> directly */
     logo: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
     ]),
+    /** the logo link href */
     href: PropTypes.string,
+    /** the logo link target */
     target: PropTypes.string,
+    /** the logo link alt */
     alt: PropTypes.string,
   }),
+  /** the package version */
   version: PropTypes.string, // eslint-disable-line react/require-default-props
   /** Set title to be rendered. */
   title: PropTypes.string, // eslint-disable-line react/require-default-props
@@ -79,6 +85,13 @@ to-css-modules" target="_blank">here</a>.
   items: PropTypes.node, // eslint-disable-line react/require-default-props
 };
 
+
+/**
+ * The SideBar component have many props that can be customized
+ * @param props
+ * @returns {*}
+ * @constructor
+ */
 const SideBarUnstyled = (props) => {
   const {
     className,
@@ -94,8 +107,8 @@ const SideBarUnstyled = (props) => {
       className={mapToCssModules(cn(className, 'navigation'), cssModule)}
       {...attributes}
     >
-      {logo.logo && (
-        <div className="navigation-logo">
+      <div className="navigation-logo">
+        {logo.logo && (
           <Logo className="logo-img">
             {typeof logo.logo === 'string' ? (
               <Img
@@ -105,10 +118,10 @@ const SideBarUnstyled = (props) => {
               />
             ) : logo.logo}
           </Logo>
-          <p className="navigation-title">{title}</p>
-          {version && <Version>v{version}</Version>}
-        </div>
-      )}
+        )}
+        <p className="navigation-title">{title}</p>
+        {version && <Version>v{version}</Version>}
+      </div>
       <div className="font-weight-bold">
         {items}
       </div>
@@ -151,4 +164,5 @@ const SideBar = styled(SideBarUnstyled)`
 SideBar.defaultProps = defaultProps;
 SideBar.propTypes = propTypes;
 
+/** @component */
 export default SideBar;
