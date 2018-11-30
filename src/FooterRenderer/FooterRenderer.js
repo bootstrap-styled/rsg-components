@@ -38,7 +38,7 @@ export const propTypes = {
     logo: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
-    ]),
+    ]).isRequired,
     href: PropTypes.string,
     target: PropTypes.string,
     alt: PropTypes.string,
@@ -68,13 +68,12 @@ const FooterRendererUnstyled = (props) => {
     cssModule,
     ...attributes
   } = omit(props, ['theme']);
-
   return (
     <Footer
       className={mapToCssModules(cn(className, 'rsg-footer', cssModule))}
       {...attributes}
     >
-      {typeof logo.logo === 'string' ? (
+      {logo.logo && typeof logo.logo === 'string' ? (
         <div>
           {logo.text && (
             <span>{logo.text}</span>

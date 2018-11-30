@@ -21,6 +21,21 @@ export const defaultProps = {
   reset: true,
   injectGlobal: true,
   shadow: true,
+  logoMenu: {
+    logo: null,
+    href: null,
+    target: null,
+    text: null,
+    alt: null,
+  },
+  logoFooter: {
+    logo: null,
+    height: null,
+    href: null,
+    target: null,
+    text: null,
+    alt: null,
+  },
 };
 
 /* eslint-disable react/require-default-props */
@@ -46,7 +61,7 @@ export const propTypes = {
     logo: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
-    ]).isRequired,
+    ]),
     href: PropTypes.string,
     target: PropTypes.string,
     text: PropTypes.string,
@@ -57,7 +72,7 @@ export const propTypes = {
     logo: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
-    ]).isRequired,
+    ]),
     height: PropTypes.string,
     href: PropTypes.string,
     target: PropTypes.string,
@@ -199,7 +214,7 @@ class StyleGuideRendererUnstyled extends Component {
         )}
         <main className={`content ${isOpenSidebar && hasSidebar ? 'sidebar-open' : 'sidebar-close'}`} >
           {children}
-          <FooterRenderer logo={logoFooter} />
+          {logoFooter.logo && <FooterRenderer logo={logoFooter} />}
         </main>
       </div>
     );
