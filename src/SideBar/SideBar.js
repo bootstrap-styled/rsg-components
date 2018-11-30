@@ -94,21 +94,21 @@ const SideBarUnstyled = (props) => {
       className={mapToCssModules(cn(className, 'navigation'), cssModule)}
       {...attributes}
     >
-      <div className="navigation-logo">
-        <Logo className="logo-img">
-          {typeof logo.logo === 'string' ? (
-            <Img
-              className="logo-img"
-              src={`data:image/png;base64,${logo.logo}`}
-              alt={logo.alt}
-            />
-          ) : (
-            logo.logo
-          )}
-        </Logo>
-        <p className="navigation-title">{title}</p>
-        {version && <Version>v{version}</Version>}
-      </div>
+      {logo.logo && (
+        <div className="navigation-logo">
+          <Logo className="logo-img">
+            {typeof logo.logo === 'string' ? (
+              <Img
+                className="logo-img"
+                src={`data:image/png;base64,${logo.logo}`}
+                alt={logo.alt}
+              />
+            ) : logo.logo}
+          </Logo>
+          <p className="navigation-title">{title}</p>
+          {version && <Version>v{version}</Version>}
+        </div>
+      )}
       <div className="font-weight-bold">
         {items}
       </div>
