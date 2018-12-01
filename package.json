@@ -228,6 +228,7 @@
     "@bootstrap-styled/v4": "^1.2.6",
     "bootstrap-styled": "^2.1.0",
     "classnames": "^2.2.6",
+    "color": "^1.0.3",
     "codemirror": "^5.42.0",
     "font-awesome": "^4.7.0",
     "lodash.debounce": "^4.0.8",

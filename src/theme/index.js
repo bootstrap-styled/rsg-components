@@ -16,10 +16,7 @@ export const makeTheme = createMakeTheme([
     },
   })),
   toMakeTheme(makeThemeBootstrapStyled({
-    '$btn-primary-color': '#B31255',
-    '$btn-primary-bg': '#1C00ff00',
-    '$btn-primary-border': '#1C00ff00',
-    '$btn-box-shadow': '#1C00ff00 !important',
+    '$brand-primary': '#3A007D',
     '$headings-font-family': '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
     '$headings-font-weight': 'normal',
     '$font-size-h1': '36px',
