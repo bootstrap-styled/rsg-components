@@ -1,3 +1,25 @@
+## [1.0.5](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.4...v1.0.5) (2018-11-30)
+
+
+### Bug Fixes
+
+* **ribbon:** added ribbon ([26c9323](https://github.com/bootstrap-styled/rsg-components/commit/26c9323))
+* **theme:** export makeTheme ([396323e](https://github.com/bootstrap-styled/rsg-components/commit/396323e))
+
+## [1.0.4](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.3...v1.0.4) (2018-11-30)
+
+
+### Bug Fixes
+
+* **documentation:** fix documentation and a few props ([d4e78a7](https://github.com/bootstrap-styled/rsg-components/commit/d4e78a7))
+
+## [1.0.3](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.2...v1.0.3) (2018-11-30)
+
+
+### Bug Fixes
+
+* **bugs:** fix a few bugs in console when using StyleGuideRenderer without logos ([f068ef9](https://github.com/bootstrap-styled/rsg-components/commit/f068ef9))
+
 ## [1.0.2](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.1...v1.0.2) (2018-11-29)
 
 
