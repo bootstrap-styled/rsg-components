@@ -103,12 +103,13 @@ const TabButtonRendererUnstyled = (props) => {
     <Button
       className={mapToCssModules(cn(
         className,
-        'rsg-tab-button',
+        'rsg-tab-button rounded-bottom-0',
         { active }
       ), cssModule)}
       {...attributes}
       name={visibleName}
       onClick={onClick}
+      color="secondary"
     >
       {children}
     </Button>

@@ -508,13 +508,20 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   v['$rsg-table-cell-child-p-isolation'] = u['$rsg-table-cell-child-p-isolation'] || 'false';
   v['$rsg-table-cell-child-p-margin'] = u['$rsg-table-cell-child-p-margin'] || '0 0 0 0';
   // markdown
-  v['$rsg-markdown-block-quote-margin'] = u['$rsg-markdown-block-quote-margin'] || `${v['$rsg-space'].md} ${v['$rsg-space'].md}`;
-  v['$rsg-markdown-block-quote-padding'] = u['$rsg-markdown-block-quote-padding'] || '0';
+
   v['$rsg-markdown-block-quote-color'] = u['$rsg-markdown-block-quote-color'] || v['$rsg-color-base'];
   v['$rsg-markdown-block-quote-font-family'] = u['$rsg-markdown-block-quote-font-family'] || v['$rsg-font-family-base'];
-  v['$rsg-markdown-block-quote-font-size'] = u['$rsg-markdown-block-quote-font-size'] || v['$rsg-font-size'].md;
   v['$rsg-markdown-block-quote-line-height'] = u['$rsg-markdown-block-quote-line-height'] || '1.5';
-  v['$rsg-markdown-block-quote-border'] = u['$rsg-markdown-block-quote-border'] || 'none';
+  // New variables for markdown blockquote.
+  v['$rsg-markdown-block-quote-border-width'] = u['$rsg-markdown-block-quote-border-width'] || '1px';
+  v['$rsg-markdown-block-quote-border-left-width'] = u['$rsg-markdown-block-quote-border-left-width'] || '4px';
+  v['$rsg-markdown-block-quote-radius'] = u['$rsg-markdown-block-quote-radius'] || '5px';
+
+  // The following variables are part of the rsg original library source. They are overriding bs variables which we do not want, so they are commented in favor of BS variables.
+  // v['$rsg-markdown-block-quote-margin'] = u['$rsg-markdown-block-quote-margin'] || `${v['$rsg-space'].md} ${v['$rsg-space'].md}`;
+  // v['$rsg-markdown-block-quote-padding'] = u['$rsg-markdown-block-quote-padding'] || '0';
+  // v['$rsg-markdown-block-quote-font-size'] = u['$rsg-markdown-block-quote-font-size'] || v['$rsg-font-size'].md;
+
   v['$rsg-markdown-pre-font-family'] = u['$rsg-markdown-pre-font-family'] || v['$rsg-font-family-base'];
   v['$rsg-markdown-pre-font-size'] = u['$rsg-markdown-pre-font-size'] || v['$rsg-font-size'].sm;
   v['$rsg-markdown-pre-line-height'] = u['$rsg-markdown-pre-line-height'] || '1.5';
