@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.5...v1.0.6) (2018-12-01)
+
+
+### Bug Fixes
+
+* **Markdown/Blockquote:** added variables to improve visuals. ([772e751](https://github.com/bootstrap-styled/rsg-components/commit/772e751))
+* **TabButton:** improved visuals. ([fb6bce5](https://github.com/bootstrap-styled/rsg-components/commit/fb6bce5))
+
 ## [1.0.5](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.4...v1.0.5) (2018-11-30)
 
 
