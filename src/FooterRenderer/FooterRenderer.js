@@ -42,7 +42,7 @@ export const propTypes = {
     logo: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
-    ]).isRequired,
+    ]),
     /** link for the logo */
     href: PropTypes.string,
     /** link target */
