@@ -8,11 +8,12 @@ import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import 'font-awesome/css/font-awesome.css';
 import SideBar from '../SideBar';
 import FooterRenderer from '../FooterRenderer';
 import Ribbon from '../Ribbon';
 import defaultTheme from '../theme';
+
+require('!!../../loaders/style-loader!../../loaders/css-loader!font-awesome/css/font-awesome.css'); // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved
 
 export const defaultProps = {
   hasSidebar: true,
