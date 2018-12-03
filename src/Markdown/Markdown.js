@@ -13,8 +13,7 @@ import DetailsSummary from './Details/DetailsSummaryRenderer';
 import Link from '../Link';
 import Text from '../Text';
 import Para from '../Para';
-
-require('!!../../loaders/style-loader!../../loaders/css-loader!./tomorrow.css'); // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved
+import './tomorrow.css';
 
 export const baseOverrides = {
   a: {
