@@ -1,3 +1,11 @@
+## [1.0.7](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.6...v1.0.7) (2018-12-03)
+
+
+### Bug Fixes
+
+* **css:** tomorrow.css was missing ([02b9180](https://github.com/bootstrap-styled/rsg-components/commit/02b9180))
+* **imports:** remove internal loaders ([0159211](https://github.com/bootstrap-styled/rsg-components/commit/0159211))
+
 ## [1.0.6](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.5...v1.0.6) (2018-12-01)
 
 
