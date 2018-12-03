@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { compiler } from 'markdown-to-jsx';
-import '../../loaders/tomorrow.css';
 import { Table, TableHead, TableBody, TableRow, TableCell } from './Table';
 import MarkdownHeading from './MarkdownHeading';
 import List from './List';
@@ -14,6 +13,7 @@ import DetailsSummary from './Details/DetailsSummaryRenderer';
 import Link from '../Link';
 import Text from '../Text';
 import Para from '../Para';
+import './tomorrow.css';
 
 export const baseOverrides = {
   a: {
