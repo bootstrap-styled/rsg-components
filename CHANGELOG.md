@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.9...v1.0.10) (2018-12-03)
+
+
+### Bug Fixes
+
+* **loaders:** remove loaders ([7049eec](https://github.com/bootstrap-styled/rsg-components/commit/7049eec))
+
 ## [1.0.9](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.8...v1.0.9) (2018-12-03)
 
 
