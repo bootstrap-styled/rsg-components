@@ -8,7 +8,6 @@ import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import 'font-awesome/css/font-awesome.css';
 import SideBar from '../SideBar';
 import FooterRenderer from '../FooterRenderer';
 import Ribbon from '../Ribbon';
