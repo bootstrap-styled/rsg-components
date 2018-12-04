@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.10...v1.0.11) (2018-12-04)
+
+
+### Bug Fixes
+
+* **css:** move font-awesome import into Markdown ([81865e8](https://github.com/bootstrap-styled/rsg-components/commit/81865e8))
+
 ## [1.0.10](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.9...v1.0.10) (2018-12-03)
 
 
