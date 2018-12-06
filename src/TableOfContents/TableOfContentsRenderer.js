@@ -22,8 +22,6 @@ export const defaultProps = {
       '$rsg-toc-form-margin': '0 auto',
     },
   },
-  size: 'sm',
-  placeholder: 'Filter by name',
 };
 
 export const propTypes = {
@@ -37,10 +35,6 @@ export const propTypes = {
   searchTerm: PropTypes.string.isRequired,
   /** Set function passed to onchange input event. */
   onSearchTermChange: PropTypes.func.isRequired,
-  /** Set size of Input. */
-  size: PropTypes.string,
-  /** Set placeholder of Input. */
-  placeholder: PropTypes.string,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     styleguide: PropTypes.shape({
@@ -66,8 +60,6 @@ const TableOfContentsRendererUnstyled = (props) => {
     className,
     children,
     searchTerm,
-    size,
-    placeholder,
     onSearchTermChange,
     cssModule,
     ...attributes
@@ -80,9 +72,9 @@ const TableOfContentsRendererUnstyled = (props) => {
       <Form className="rsg-toc-form">
         <Input
           className="rsg-toc-form-input no-print"
-          size={size}
+          size="sm"
           value={searchTerm}
-          placeholder={placeholder}
+          placeholder="Filter by name"
           aria-label="Filter by name"
           onChange={(event) => onSearchTermChange(event.target.value)}
         />
