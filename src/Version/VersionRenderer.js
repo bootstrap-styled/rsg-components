@@ -77,5 +77,5 @@ const VersionRenderer = styled(VersionRendererUnstyled)`
 
 VersionRenderer.defaultProps = defaultProps;
 VersionRenderer.propTypes = propTypes;
-
+/** @component */
 export default VersionRenderer;

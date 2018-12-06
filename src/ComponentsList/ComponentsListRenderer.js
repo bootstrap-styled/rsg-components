@@ -249,4 +249,5 @@ const ComponentsListRenderer = styled(ComponentsListRendererUnstyled)`
 ComponentsListRenderer.propTypes = propTypes;
 ComponentsListRenderer.defaultProps = defaultProps;
 
+/** @component */
 export default ComponentsListRenderer;

@@ -78,4 +78,5 @@ const EditorLoaderRenderer = styled(EditorLoaderRendererUnstyled)`
 EditorLoaderRenderer.defaultProps = defaultProps;
 EditorLoaderRenderer.propTypes = propTypes;
 
+/** @component */
 export default EditorLoaderRenderer;

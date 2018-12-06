@@ -122,5 +122,5 @@ const TextRenderer = styled(TextRendererUnstyled)`
 
 TextRenderer.defaultProps = defaultProps;
 TextRenderer.propTypes = propTypes;
-
+/** @component */
 export default TextRenderer;

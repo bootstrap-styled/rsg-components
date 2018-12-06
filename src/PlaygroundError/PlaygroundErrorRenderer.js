@@ -84,5 +84,5 @@ const PlaygroundErrorRenderer = styled(PlaygroundErrorRendererUnstyled)`
 
 PlaygroundErrorRenderer.defaultProps = defaultProps;
 PlaygroundErrorRenderer.propTypes = propTypes;
-
+/** @component */
 export default PlaygroundErrorRenderer;

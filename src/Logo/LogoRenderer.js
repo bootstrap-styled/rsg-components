@@ -75,4 +75,5 @@ const LogoRenderer = styled(LogoRendererUnstyled)`
 LogoRenderer.defaultProps = defaultProps;
 LogoRenderer.propTypes = propTypes;
 
+/** @component */
 export default LogoRenderer;

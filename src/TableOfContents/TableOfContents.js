@@ -206,5 +206,5 @@ const TableOfContents = styled(TableOfContentsUnstyled)`
 
 TableOfContents.defaultProps = defaultProps;
 TableOfContents.propTypes = propTypes;
-
+/** @component */
 export default TableOfContents;

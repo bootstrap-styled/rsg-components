@@ -119,4 +119,5 @@ const ErrorRenderer = styled(ErrorRendererUnstyled)`
 ErrorRenderer.defaultProps = defaultProps;
 ErrorRenderer.propTypes = propTypes;
 
+/** @component */
 export default ErrorRenderer;

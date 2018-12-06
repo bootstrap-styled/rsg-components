@@ -68,4 +68,5 @@ const MessageRenderer = styled(MessageRendererUnstyled)`
 MessageRenderer.defaultProps = defaultProps;
 MessageRenderer.propTypes = propTypes;
 
+/** @component */
 export default MessageRenderer;

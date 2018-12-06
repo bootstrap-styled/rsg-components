@@ -174,5 +174,5 @@ const SectionHeadingRenderer = styled(SectionHeadingRendererUnstyled)`
 
 SectionHeadingRenderer.defaultProps = defaultProps;
 SectionHeadingRenderer.propTypes = propTypes;
-
+/** @component */
 export default SectionHeadingRenderer;

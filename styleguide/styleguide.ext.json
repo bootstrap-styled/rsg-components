@@ -5,6 +5,7 @@
     "**/*.spec.{js,jsx,ts,tsx}",
     "**/*.d.ts"
   ],
+  "pagePerSection": true,
   "sections": [
     {
       "name": "Introduction",
@@ -29,24 +30,12 @@
       ]
     },
     {
-      "name": "UI components",
-      "content": "docs/ui.md",
-      "sections": [
-        {
-          "name": "StyleGuideRenderer",
-          "components": "src/StyleGuide/StyleGuideRenderer.js",
-          "sections": [
-            {
-              "name": "SideBar",
-              "components": "src/SideBar/SideBar.js"
-            },
-            {
-              "name": "Footer",
-              "components": "src/FooterRenderer/FooterRenderer.js"
-            }
-          ]
-        }
-      ]
+      "name": "UI Components",
+      "components": "src/**/*.js",
+      "ignore": [
+        "src/**/index.js"
+      ],
+      "sectionDepth": 1
     },
     {
       "name": "Contribute",
