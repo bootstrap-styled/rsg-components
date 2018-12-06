@@ -1,3 +1,11 @@
+## [1.0.12](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.11...v1.0.12) (2018-12-06)
+
+
+### Bug Fixes
+
+* **documentation:** added all components to documentation. ([b4f26cb](https://github.com/bootstrap-styled/rsg-components/commit/b4f26cb))
+* **TableOfContentsRenderer:** added props size and placeholder. ([4b57e08](https://github.com/bootstrap-styled/rsg-components/commit/4b57e08))
+
 ## [1.0.11](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.10...v1.0.11) (2018-12-04)
 
 
