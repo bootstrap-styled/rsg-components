@@ -141,4 +141,5 @@ const HeadingRenderer = styled(HeadingRendererUnstyled)`
 HeadingRenderer.defaultProps = defaultProps;
 HeadingRenderer.propTypes = propTypes;
 
+/** @component */
 export default HeadingRenderer;

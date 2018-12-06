@@ -122,5 +122,5 @@ const PlaygroundRenderer = styled(PlaygroundRendererUnstyled)`
 
 PlaygroundRenderer.defaultProps = defaultProps;
 PlaygroundRenderer.propTypes = propTypes;
-
+/** @component */
 export default PlaygroundRenderer;

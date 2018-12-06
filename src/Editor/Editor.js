@@ -148,4 +148,5 @@ const Editor = styled(EditorUnstyled)`
 Editor.defaultProps = defaultProps;
 Editor.propTypes = propTypes;
 
+/** @component */
 export default Editor;

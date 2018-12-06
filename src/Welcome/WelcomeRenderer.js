@@ -97,4 +97,5 @@ WelcomeRenderer.propTypes = propTypes;
 WelcomeRendererUnstyled.contextTypes = {
   config: PropTypes.object,
 };
+/** @component */
 export default WelcomeRenderer;

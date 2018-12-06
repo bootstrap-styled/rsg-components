@@ -81,4 +81,5 @@ const ParaRenderer = styled(ParaRendererUnstyled)`
  `}
 `;
 
+/** @component */
 export default ParaRenderer;

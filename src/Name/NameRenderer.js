@@ -108,4 +108,5 @@ const NameRenderer = styled(NameRendererUnstyled)`
 NameRenderer.defaultProps = defaultProps;
 NameRenderer.propTypes = propTypes;
 
+/** @component */
 export default NameRenderer;

@@ -90,5 +90,5 @@ const TypeRenderer = styled(TypeRendererUnstyled)`
 
 TypeRenderer.defaultProps = defaultProps;
 TypeRenderer.propTypes = propTypes;
-
+/** @component */
 export default TypeRenderer;

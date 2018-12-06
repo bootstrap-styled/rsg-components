@@ -139,4 +139,5 @@ const PathlineRenderer = styled(PathlineRendererUnstyled)`
 PathlineRenderer.defaultProps = defaultProps;
 PathlineRenderer.propTypes = propTypes;
 
+/** @component */
 export default PathlineRenderer;

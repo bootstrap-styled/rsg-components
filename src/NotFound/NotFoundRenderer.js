@@ -64,4 +64,5 @@ const NotFoundRenderer = styled(NotFoundRendererUnstyled)`
   `};
 `;
 
+/** @component */
 export default NotFoundRenderer;

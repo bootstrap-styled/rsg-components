@@ -160,5 +160,5 @@ const RibbonRenderer = styled(RibbonRendererUnstyled)`
 
 RibbonRenderer.defaultProps = defaultProps;
 RibbonRenderer.propTypes = propTypes;
-
+/** @component */
 export default RibbonRenderer;

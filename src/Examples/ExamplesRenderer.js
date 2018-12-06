@@ -68,4 +68,5 @@ const ExamplesRenderer = styled(ExamplesRendererUnstyled)`
 ExamplesRenderer.defaultProps = defaultProps;
 ExamplesRenderer.propTypes = propTypes;
 
+/** @component */
 export default ExamplesRenderer;

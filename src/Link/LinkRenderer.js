@@ -71,4 +71,5 @@ const LinkRenderer = styled(LinkRendererUnstyled)`
 LinkRenderer.defaultProps = defaultProps;
 LinkRenderer.propTypes = propTypes;
 
+/** @component */
 export default LinkRenderer;

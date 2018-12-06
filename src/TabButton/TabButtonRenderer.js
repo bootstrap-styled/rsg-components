@@ -158,5 +158,5 @@ const TabButtonRenderer = styled(TabButtonRendererUnstyled)`
 
 TabButtonRenderer.defaultProps = defaultProps;
 TabButtonRenderer.propTypes = propTypes;
-
+/** @component */
 export default TabButtonRenderer;
