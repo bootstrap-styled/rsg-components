@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.14...v1.0.15) (2018-12-09)
+
+
+### Bug Fixes
+
+* **sidebar:** improve a in sidebar ([4472f40](https://github.com/bootstrap-styled/rsg-components/commit/4472f40))
+
 ## [1.0.14](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.13...v1.0.14) (2018-12-09)
 
 
