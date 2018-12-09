@@ -1,3 +1,47 @@
+## [1.0.11](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.10...v1.0.11) (2018-12-04)
+
+
+### Bug Fixes
+
+* **css:** move font-awesome import into Markdown ([81865e8](https://github.com/bootstrap-styled/rsg-components/commit/81865e8))
+
+## [1.0.10](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.9...v1.0.10) (2018-12-03)
+
+
+### Bug Fixes
+
+* **loaders:** remove loaders ([7049eec](https://github.com/bootstrap-styled/rsg-components/commit/7049eec))
+
+## [1.0.9](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.8...v1.0.9) (2018-12-03)
+
+
+### Bug Fixes
+
+* **ci:** build ([fe31f98](https://github.com/bootstrap-styled/rsg-components/commit/fe31f98))
+
+## [1.0.8](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.7...v1.0.8) (2018-12-03)
+
+
+### Bug Fixes
+
+* **dependencies:** Upgrade bootstrap-styled to 2.1.2 ([695d635](https://github.com/bootstrap-styled/rsg-components/commit/695d635))
+
+## [1.0.7](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.6...v1.0.7) (2018-12-03)
+
+
+### Bug Fixes
+
+* **css:** tomorrow.css was missing ([02b9180](https://github.com/bootstrap-styled/rsg-components/commit/02b9180))
+* **imports:** remove internal loaders ([0159211](https://github.com/bootstrap-styled/rsg-components/commit/0159211))
+
+## [1.0.6](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.5...v1.0.6) (2018-12-01)
+
+
+### Bug Fixes
+
+* **Markdown/Blockquote:** added variables to improve visuals. ([772e751](https://github.com/bootstrap-styled/rsg-components/commit/772e751))
+* **TabButton:** improved visuals. ([fb6bce5](https://github.com/bootstrap-styled/rsg-components/commit/fb6bce5))
+
 ## [1.0.5](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.4...v1.0.5) (2018-11-30)
 
 

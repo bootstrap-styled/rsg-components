@@ -115,5 +115,5 @@ const SectionRenderer = styled(SectionRendererUnstyled)`
 
 SectionRenderer.defaultProps = defaultProps;
 SectionRenderer.propTypes = propTypes;
-
+/** @component */
 export default SectionRenderer;

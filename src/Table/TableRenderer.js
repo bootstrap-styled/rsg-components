@@ -379,5 +379,5 @@ const TableRenderer = styled(TableRendererUnstyled)`
 
 TableRenderer.defaultProps = defaultProps;
 TableRenderer.propTypes = propTypes;
-
+/** @component */
 export default TableRenderer;

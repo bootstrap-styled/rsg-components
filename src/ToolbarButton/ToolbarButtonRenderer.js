@@ -170,5 +170,5 @@ const ToolbarButtonRenderer = styled(ToolbarButtonRendererUnstyled)`
 
 ToolbarButtonRenderer.defaultProps = defaultProps;
 ToolbarButtonRenderer.propTypes = propTypes;
-
+/** @component */
 export default ToolbarButtonRenderer;

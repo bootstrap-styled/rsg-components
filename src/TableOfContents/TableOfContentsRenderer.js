@@ -112,5 +112,5 @@ const TableOfContentsRenderer = styled(TableOfContentsRendererUnstyled)`
 
 TableOfContentsRenderer.defaultProps = defaultProps;
 TableOfContentsRenderer.propTypes = propTypes;
-
+/** @component */
 export default TableOfContentsRenderer;

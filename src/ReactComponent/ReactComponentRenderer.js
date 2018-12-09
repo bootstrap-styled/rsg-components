@@ -145,5 +145,5 @@ const ReactComponentRenderer = styled(ReactComponentRendererUnstyled)`
 
 ReactComponentRenderer.defaultProps = defaultProps;
 ReactComponentRenderer.propTypes = propTypes;
-
+/** @component */
 export default ReactComponentRenderer;

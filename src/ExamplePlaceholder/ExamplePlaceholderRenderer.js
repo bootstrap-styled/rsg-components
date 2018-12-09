@@ -146,4 +146,5 @@ const ExamplePlaceholderRenderer = styled(ExamplePlaceholderRendererUnstyled)`
 ExamplePlaceholderRenderer.defaultProps = defaultProps;
 ExamplePlaceholderRenderer.propTypes = propTypes;
 
+/** @component */
 export default ExamplePlaceholderRenderer;

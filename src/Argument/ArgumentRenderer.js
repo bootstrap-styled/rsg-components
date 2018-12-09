@@ -109,4 +109,5 @@ const ArgumentRenderer = styled(ArgumentRendererUnstyled)`
 ArgumentRenderer.defaultProps = defaultProps;
 ArgumentRenderer.propTypes = propTypes;
 
+/** @component */
 export default ArgumentRenderer;
