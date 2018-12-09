@@ -15,7 +15,7 @@ export const defaultProps = {
   logo: {
     logo: null,
     href: 'https://bootstrap-styled.github.io/rsg-components',
-    target: '_blank',
+    target: null,
     alt: '@bootstrap-styled/rsg-components',
   },
   theme: {
@@ -102,31 +102,34 @@ const SideBarUnstyled = (props) => {
     items,
     ...attributes
   } = omit(props, ['theme', 'shadow']);
-  const { logo, alt, ...restLogo } = logoObject;
+  const { logo, alt, href, target, ...restLogo } = logoObject;
+  const logoComponent = logo ? (
+    <Logo className="logo-img">
+      {typeof logo === 'string' ? (
+        <Img
+          className="logo-img"
+          src={logo}
+          alt={alt}
+          {...restLogo}
+        />
+      ) : logo}
+    </Logo>
+  ) : null;
   return (
     <NavigationStyleguide
       className={mapToCssModules(cn(className, 'navigation'), cssModule)}
       {...attributes}
     >
       <div className="navigation-logo">
-        {logo && (
-          <Logo className="logo-img">
-            {typeof logo === 'string' ? (
-              <Img
-                className="logo-img"
-                src={logo}
-                alt={alt}
-                {...restLogo}
-              />
-            ) : logo}
-          </Logo>
-        )}
+        {href && logo ? (
+          <a href={href} target={target}>
+            {logoComponent}
+          </a>
+        ) : logoComponent}
         <p className="navigation-title">{title}</p>
         {version && <Version>v{version}</Version>}
       </div>
-      <div className="font-weight-bold">
-        {items}
-      </div>
+      <div className="font-weight-bold">{items}</div>
     </NavigationStyleguide>
   );
 };
