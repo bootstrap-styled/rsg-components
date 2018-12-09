@@ -113,7 +113,7 @@ const SideBarUnstyled = (props) => {
             {typeof logo.logo === 'string' ? (
               <Img
                 className="logo-img"
-                src={`data:image/png;base64,${logo.logo}`}
+                src={logo.logo}
                 alt={logo.alt}
               />
             ) : logo.logo}

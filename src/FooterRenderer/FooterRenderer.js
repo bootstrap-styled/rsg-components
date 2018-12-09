@@ -96,7 +96,7 @@ const FooterRendererUnstyled = (props) => {
         >
           <Img
             className="rsg-footer-img"
-            src={`data:image/png;base64,${logo.logo}`}
+            src={logo.logo}
             height={logo.height}
             alt={logo.alt}
           />
