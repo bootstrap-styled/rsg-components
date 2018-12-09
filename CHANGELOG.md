@@ -1,3 +1,12 @@
+## [1.0.13](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.12...v1.0.13) (2018-12-09)
+
+
+### Bug Fixes
+
+* **dependencies:** updated many dependencies ([fe838af](https://github.com/bootstrap-styled/rsg-components/commit/fe838af))
+* **documentation:** using [@rollup-umd](https://github.com/rollup-umd)/documentation instead of deprecated [@yeutech-lab](https://github.com/yeutech-lab)/rollup-umd-documentation ([b5fab79](https://github.com/bootstrap-styled/rsg-components/commit/b5fab79))
+* **ui:** footer and sidebar now doesn't predict what type of src is the sidebar logo and the footer logo ([bb5184b](https://github.com/bootstrap-styled/rsg-components/commit/bb5184b))
+
 ## [1.0.12](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.11...v1.0.12) (2018-12-06)
 
 
