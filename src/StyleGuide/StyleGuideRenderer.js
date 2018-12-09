@@ -203,8 +203,8 @@ class StyleGuideRendererUnstyled extends Component {
               className={`sidebar-button ${isOpenSidebar ? 'sidebar-open' : 'sidebar-close'}`}
               role="button"
               tabIndex="0"
-              onClick={() => this.toggleSideBar()}
-              onKeyPress={() => this.toggleSideBar()}
+              onClick={this.toggleSideBar}
+              onKeyPress={this.toggleSideBar}
             >
               <Fa
                 size="lg"
