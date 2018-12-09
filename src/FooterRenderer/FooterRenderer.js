@@ -16,6 +16,8 @@ export const defaultProps = {
     href: 'https://bootstrap-styled.github.io/rsg-components',
     target: '_blank',
     alt: '@bootstrap-styled/rsg-components',
+    height: null,
+    width: null,
   },
   theme: {
     styleguide: {
@@ -49,6 +51,8 @@ export const propTypes = {
     target: PropTypes.string,
     /** alternative text for the logo */
     alt: PropTypes.string,
+    height: PropTypes.any,
+    width: PropTypes.any,
   }),
   /** bootstrap styled theme */
   theme: PropTypes.shape({
@@ -78,37 +82,42 @@ export const propTypes = {
 const FooterRendererUnstyled = (props) => {
   const {
     className,
-    logo,
+    logo: logoObject,
     cssModule,
     ...attributes
   } = omit(props, ['theme']);
+  const { logo, href, target, alt, text, height, width, ...restLogo } = logoObject;
+
   return (
     <Footer
       className={mapToCssModules(cn(className, 'rsg-footer', cssModule))}
       {...attributes}
     >
-      {logo.text && <span>{logo.text}</span>}
-      {typeof logo.logo === 'string' && (
+      {text && <span>{text}</span>}
+      {typeof logo === 'string' && (
         <A
-          href={logo.href}
-          target={logo.target}
-          alt={logo.alt}
+          href={href}
+          target={target}
+          alt={alt}
         >
           <Img
             className="rsg-footer-img"
-            src={logo.logo}
-            height={logo.height}
-            alt={logo.alt}
+            src={logo}
+            height={height}
+            width={width}
+            alt={alt}
+            {...restLogo}
           />
         </A>
       )}
-      {typeof logo.logo !== 'string' && logo.logo && (
+      {typeof logo !== 'string' && logo && (
         <A
-          href={logo.href}
-          target={logo.target}
-          alt={logo.alt}
+          href={href}
+          target={target}
+          alt={alt}
+          {...restLogo}
         >
-          {logo.logo}
+          {logo}
         </A>
       )}
     </Footer>

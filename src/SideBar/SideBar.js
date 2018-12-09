@@ -96,27 +96,29 @@ const SideBarUnstyled = (props) => {
   const {
     className,
     cssModule,
-    logo,
+    logo: logoObject,
     title,
     version,
     items,
     ...attributes
   } = omit(props, ['theme', 'shadow']);
+  const { logo, alt, ...restLogo } = logoObject;
   return (
     <NavigationStyleguide
       className={mapToCssModules(cn(className, 'navigation'), cssModule)}
       {...attributes}
     >
       <div className="navigation-logo">
-        {logo.logo && (
+        {logo && (
           <Logo className="logo-img">
-            {typeof logo.logo === 'string' ? (
+            {typeof logo === 'string' ? (
               <Img
                 className="logo-img"
-                src={logo.logo}
-                alt={logo.alt}
+                src={logo}
+                alt={alt}
+                {...restLogo}
               />
-            ) : logo.logo}
+            ) : logo}
           </Logo>
         )}
         <p className="navigation-title">{title}</p>
