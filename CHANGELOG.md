@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.0...v1.1.1) (2018-12-16)
+
+
+### Bug Fixes
+
+* **greenkeeper:** fix sonar running on greenkeeper test ([4bcb3e8](https://github.com/bootstrap-styled/rsg-components/commit/4bcb3e8))
+
 # [1.1.0](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.15...v1.1.0) (2018-12-16)
 
 
