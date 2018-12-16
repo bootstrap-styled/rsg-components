@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.15...v1.1.0) (2018-12-16)
+
+
+### Features
+
+* **greenkeeper:** added greenkeeper and using [@bootstrap-styled](https://github.com/bootstrap-styled)/color instead of color, upgrade all dependencies to latest ([74a92b6](https://github.com/bootstrap-styled/rsg-components/commit/74a92b6))
+
 ## [1.0.15](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.14...v1.0.15) (2018-12-09)
 
 
