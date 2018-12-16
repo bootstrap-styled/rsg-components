@@ -6,7 +6,7 @@ import omit from 'lodash.omit';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import Color from 'color';
+import Color from '@bootstrap-styled/color';
 export const defaultProps = {
   theme: {
     '$enable-rounded': true,
