@@ -1,3 +1,34 @@
+## [1.0.15](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.14...v1.0.15) (2018-12-09)
+
+
+### Bug Fixes
+
+* **sidebar:** improve a in sidebar ([4472f40](https://github.com/bootstrap-styled/rsg-components/commit/4472f40))
+
+## [1.0.14](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.13...v1.0.14) (2018-12-09)
+
+
+### Bug Fixes
+
+* **documentation:** sidebar ([6b621f7](https://github.com/bootstrap-styled/rsg-components/commit/6b621f7))
+
+## [1.0.13](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.12...v1.0.13) (2018-12-09)
+
+
+### Bug Fixes
+
+* **dependencies:** updated many dependencies ([fe838af](https://github.com/bootstrap-styled/rsg-components/commit/fe838af))
+* **documentation:** using [@rollup-umd](https://github.com/rollup-umd)/documentation instead of deprecated [@yeutech-lab](https://github.com/yeutech-lab)/rollup-umd-documentation ([b5fab79](https://github.com/bootstrap-styled/rsg-components/commit/b5fab79))
+* **ui:** footer and sidebar now doesn't predict what type of src is the sidebar logo and the footer logo ([bb5184b](https://github.com/bootstrap-styled/rsg-components/commit/bb5184b))
+
+## [1.0.12](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.11...v1.0.12) (2018-12-06)
+
+
+### Bug Fixes
+
+* **documentation:** added all components to documentation. ([b4f26cb](https://github.com/bootstrap-styled/rsg-components/commit/b4f26cb))
+* **TableOfContentsRenderer:** added props size and placeholder. ([4b57e08](https://github.com/bootstrap-styled/rsg-components/commit/4b57e08))
+
 ## [1.0.11](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.10...v1.0.11) (2018-12-04)
 
 
