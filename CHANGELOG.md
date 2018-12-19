@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.1...v1.1.2) (2018-12-19)
+
+
+### Bug Fixes
+
+* **package:** update [@bootstrap-styled](https://github.com/bootstrap-styled)/v4 to version 2.0.0 ([2ae6042](https://github.com/bootstrap-styled/rsg-components/commit/2ae6042))
+
 ## [1.1.1](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.0...v1.1.1) (2018-12-16)
 
 
