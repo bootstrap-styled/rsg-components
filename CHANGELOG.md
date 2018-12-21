@@ -1,3 +1,24 @@
+## [1.1.2](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.1...v1.1.2) (2018-12-19)
+
+
+### Bug Fixes
+
+* **package:** update [@bootstrap-styled](https://github.com/bootstrap-styled)/v4 to version 2.0.0 ([2ae6042](https://github.com/bootstrap-styled/rsg-components/commit/2ae6042))
+
+## [1.1.1](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.0...v1.1.1) (2018-12-16)
+
+
+### Bug Fixes
+
+* **greenkeeper:** fix sonar running on greenkeeper test ([4bcb3e8](https://github.com/bootstrap-styled/rsg-components/commit/4bcb3e8))
+
+# [1.1.0](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.15...v1.1.0) (2018-12-16)
+
+
+### Features
+
+* **greenkeeper:** added greenkeeper and using [@bootstrap-styled](https://github.com/bootstrap-styled)/color instead of color, upgrade all dependencies to latest ([74a92b6](https://github.com/bootstrap-styled/rsg-components/commit/74a92b6))
+
 ## [1.0.15](https://github.com/bootstrap-styled/rsg-components/compare/v1.0.14...v1.0.15) (2018-12-09)
 
 
