@@ -11,7 +11,7 @@ import cn from 'classnames';
 import omit from 'lodash.omit';
 import Link from '../Link';
 
-
+/* eslint-disable react/prop-types */
 export const propTypes = {
   /**
    * @ignore

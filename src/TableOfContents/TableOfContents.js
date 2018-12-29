@@ -11,6 +11,7 @@ import omit from 'lodash.omit';
 import TableOfContentsRenderer from './TableOfContentsRenderer';
 import ComponentsList from '../ComponentsList';
 
+/* eslint-disable react/prop-types */
 export const defaultProps = { // eslint-disable-next-line react/default-props-match-prop-types
   theme: {
     styleguide: {

@@ -79,7 +79,8 @@ const CodeRendererUnstyled = (props) => {
       <Code
         className={cn(className, 'rsg-code-highlight')}
         dangerouslySetInnerHTML={{ __html: children }}
-      />);
+      />
+    );
   }
   return (
     <Code
