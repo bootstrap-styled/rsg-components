@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.3...v1.1.4) (2018-12-29)
+
+
+### Bug Fixes
+
+* **dependencies:** fix test and update dependencies ([cc8880f](https://github.com/bootstrap-styled/rsg-components/commit/cc8880f))
+
 ## [1.1.3](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.2...v1.1.3) (2018-12-21)
 
 
