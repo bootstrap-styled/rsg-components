@@ -13,6 +13,7 @@ import FooterRenderer from '../FooterRenderer';
 import Ribbon from '../Ribbon';
 import defaultTheme from '../theme';
 
+/* eslint-disable react/prop-types */
 export const defaultProps = {
   hasSidebar: true,
   theme: defaultTheme,
