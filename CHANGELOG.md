@@ -1,3 +1,11 @@
+## [1.1.5](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.4...v1.1.5) (2019-01-31)
+
+
+### Bug Fixes
+
+* **dependencies:** Upgrade all dependencies ([00bf298](https://github.com/bootstrap-styled/rsg-components/commit/00bf298))
+* **toc:** setting input type text to prevent submitting on enter ([9d6f531](https://github.com/bootstrap-styled/rsg-components/commit/9d6f531))
+
 ## [1.1.4](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.3...v1.1.4) (2018-12-29)
 
 
