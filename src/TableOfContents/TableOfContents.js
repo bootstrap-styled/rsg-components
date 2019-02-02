@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from '@bootstrap-styled/v4/lib/Button';
 import P from '@bootstrap-styled/v4/lib/P';
-import Fa from '@bootstrap-styled/v4/lib/Fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import filterSectionsByName from 'react-styleguidist/lib/utils/filterSectionsByName';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
@@ -161,10 +161,10 @@ class TableOfContentsUnstyled extends Component {
             <div className="collapse-button-content">
               <P>
                 {isOpenCollapse ? 'Collapse all' : 'Expand all'}
-                <Fa
+                <FontAwesomeIcon
                   className={`collapse-button-content-icon ${!isOpenCollapse ? 'no-collapse' : ''}`}
                   size="lg"
-                  angle-up
+                  icon={['fas', 'angle-up']}
                 />
               </P>
             </div>

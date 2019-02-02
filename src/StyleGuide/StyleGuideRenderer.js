@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import omit from 'lodash.omit';
 import bp from '@bootstrap-styled/css-mixins/lib/breakpoints';
 import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
-import Fa from '@bootstrap-styled/v4/lib/Fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
@@ -11,6 +11,7 @@ import cn from 'classnames';
 import SideBar from '../SideBar';
 import FooterRenderer from '../FooterRenderer';
 import Ribbon from '../Ribbon';
+import '../fontawesome.config';
 import defaultTheme from '../theme';
 
 /* eslint-disable react/prop-types */
@@ -207,9 +208,9 @@ class StyleGuideRendererUnstyled extends Component {
               onClick={this.toggleSideBar}
               onKeyPress={this.toggleSideBar}
             >
-              <Fa
+              <FontAwesomeIcon
                 size="lg"
-                bars
+                icon={['fas', 'bars']}
               />
             </div>
             <SideBar className={`sidebar ${isOpenSidebar ? 'sidebar-open' : 'sidebar-close'}`} version={version} logo={logoMenu} title={title} items={toc} shadow={shadow} />

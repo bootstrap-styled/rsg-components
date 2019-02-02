@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import copy from 'clipboard-copy';
-import Fa from '@bootstrap-styled/v4/lib/Fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import bp from '@bootstrap-styled/css-mixins/lib/breakpoints';
 import cn from 'classnames';
@@ -82,7 +82,7 @@ const PathlineRendererUnstyled = (props) => {
         onClick={() => copy(children)}
         title="Copy to clipboard"
       >
-        <Fa copy />
+        <FontAwesomeIcon icon={['fas', 'copy']} />
       </ToolbarButton>
     </div>
   );

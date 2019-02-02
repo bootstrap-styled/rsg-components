@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import A from '@bootstrap-styled/v4/lib/A';
-import Fa from '@bootstrap-styled/v4/lib/Fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { hoverFocusActive } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import cn from 'classnames';
@@ -108,9 +108,9 @@ const SectionHeadingRendererUnstyled = (props) => {
       <Heading level={headingLevel} id={id}>
         <A tag={href && 'div'} className={`section-name level-${headingLevel} ${deprecated ? 'deprecated' : ''} d-flex justify-content-between`} href={href}>
           <div className="no-print">
-            <Fa
+            <FontAwesomeIcon
               className="anchor"
-              link
+              icon={['fas', 'link']}
             />
           </div>
           {children}
