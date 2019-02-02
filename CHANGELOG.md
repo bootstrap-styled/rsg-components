@@ -1,3 +1,12 @@
+## [1.1.7](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.6...v1.1.7) (2019-02-02)
+
+
+### Bug Fixes
+
+* **dependencies:** fix terser ([871ed46](https://github.com/bootstrap-styled/rsg-components/commit/871ed46))
+* **dependencies:** install terser@3.41.1 (see https://github.com/webpack-contrib/terser-webpack-plugin/issues/66) ([66c6b86](https://github.com/bootstrap-styled/rsg-components/commit/66c6b86))
+* **dependencies:** remove documentation layout [@bootstrap-styled](https://github.com/bootstrap-styled)/rsg-componennts ([10d60f8](https://github.com/bootstrap-styled/rsg-components/commit/10d60f8))
+
 ## [1.1.6](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.5...v1.1.6) (2019-02-02)
 
 
