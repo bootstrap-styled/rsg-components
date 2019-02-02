@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Collapse from '@bootstrap-styled/v4/lib/Collapse';
 import Ul from '@bootstrap-styled/v4/lib/Ul';
 import Li from '@bootstrap-styled/v4/lib/Li';
-import Fa from '@bootstrap-styled/v4/lib/Fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
@@ -184,10 +184,10 @@ class ComponentsListRendererUnstyled extends React.Component { // eslint-disable
                 >
                   {visibleName}
                 </Link>
-                <Fa
+                <FontAwesomeIcon
                   className={`rsg-component-list-icon font-weight-bold ${!this.state[`${visibleName}-is-open`] ? 'no-collapse' : ''}`}
                   size="lg"
-                  angle-up
+                  icon={['fas', 'angle-up']}
                 />
               </div>
             ) : (
