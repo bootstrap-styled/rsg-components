@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.5...v1.1.6) (2019-02-02)
+
+
+### Bug Fixes
+
+* **FontAwesome:** remove fontawesome 4 and using fontawesome 5 ([874a519](https://github.com/bootstrap-styled/rsg-components/commit/874a519))
+
 ## [1.1.5](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.4...v1.1.5) (2019-01-31)
 
 
