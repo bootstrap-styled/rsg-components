@@ -29,7 +29,7 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "echo skip styleguidist build"
   },
   "repository": {
     "type": "git",
