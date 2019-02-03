@@ -1,3 +1,11 @@
+## [1.1.11](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.10...v1.1.11) (2019-02-03)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade [@rollup-umd](https://github.com/rollup-umd)/documentation ([a334331](https://github.com/bootstrap-styled/rsg-components/commit/a334331))
+* **toc:** do not submit the form on enter ([130f41b](https://github.com/bootstrap-styled/rsg-components/commit/130f41b))
+
 ## [1.1.10](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.9...v1.1.10) (2019-02-03)
 
 
