@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.9...v1.1.10) (2019-02-03)
+
+
+### Bug Fixes
+
+* **babel:** Using babel-plugin-dynamic-import-webpack ([e752515](https://github.com/bootstrap-styled/rsg-components/commit/e752515))
+
 ## [1.1.9](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.8...v1.1.9) (2019-02-03)
 
 
