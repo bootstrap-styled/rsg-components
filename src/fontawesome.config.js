@@ -4,12 +4,16 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faBars,
   faAngleUp,
+  faAngleDoubleLeft,
   faCopy,
   faLink,
+  faArrowsAlt,
 } from '@fortawesome/free-solid-svg-icons';
 library.add(
   faBars,
   faAngleUp,
+  faAngleDoubleLeft,
   faCopy,
   faLink,
+  faArrowsAlt,
 );
