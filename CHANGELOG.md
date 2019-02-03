@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.7...v1.1.8) (2019-02-03)
+
+
+### Bug Fixes
+
+* **dependencies:** Using System.import instead of import as import dynamic loader was failing on project that does not use [@babel](https://github.com/babel)/plugin-dynamic-import and babel ([5b4c892](https://github.com/bootstrap-styled/rsg-components/commit/5b4c892))
+
 ## [1.1.7](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.6...v1.1.7) (2019-02-02)
 
 
