@@ -69,7 +69,7 @@ const TableOfContentsRendererUnstyled = (props) => {
       className={mapToCssModules(cn(className, 'rsg-toc'), cssModule)}
       {...attributes}
     >
-      <Form className="rsg-toc-form">
+      <Form className="rsg-toc-form" onSubmit={(e) => e.preventDefault()}>
         <Input
           className="rsg-toc-form-input no-print"
           type="text"
