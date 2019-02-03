@@ -1,9 +1,5 @@
 import PropTypes from 'prop-types';
 import { compiler } from 'markdown-to-jsx';
-// we import font-awesome here because StyleGuideRenderer can't import css for some weird reason.
-// This will less likely be unplugged by the user so it's safe.
-// https://github.com/webpack/webpack/issues/8456
-import 'font-awesome/css/font-awesome.css';
 import { Table, TableHead, TableBody, TableRow, TableCell } from './Table';
 import MarkdownHeading from './MarkdownHeading';
 import List from './List';
