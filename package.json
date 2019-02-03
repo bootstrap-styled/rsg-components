@@ -235,7 +235,6 @@
     "bootstrap-styled": "^2.4.7",
     "classnames": "^2.2.6",
     "codemirror": "^5.43.0",
-    "font-awesome": "^4.7.0",
     "lodash.debounce": "^4.0.8",
     "lodash.isempty": "^4.4.0",
     "lodash.map": "^4.6.0",
