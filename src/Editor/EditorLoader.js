@@ -7,7 +7,7 @@ export default class EditorLoader extends Component {
   };
 
   componentDidMount() {
-    import('./Editor').then((module) => {
+    System.import('./Editor').then((module) => { // eslint-disable-line no-undef
       this.setState({ editor: module.default });
     });
   }
