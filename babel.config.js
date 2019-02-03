@@ -16,6 +16,7 @@ module.exports = merge({
     '@babel/preset-react',
   ],
   plugins: [
+    'babel-plugin-dynamic-import-webpack',
     '@babel/plugin-transform-runtime',
     'babel-plugin-styled-components',
     '@babel/plugin-transform-async-to-generator',
