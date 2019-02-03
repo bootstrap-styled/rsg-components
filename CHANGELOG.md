@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.8...v1.1.9) (2019-02-03)
+
+
+### Bug Fixes
+
+* **Markdown:** completely remove font awesome 4 ([8ef4551](https://github.com/bootstrap-styled/rsg-components/commit/8ef4551))
+
 ## [1.1.8](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.7...v1.1.8) (2019-02-03)
 
 
