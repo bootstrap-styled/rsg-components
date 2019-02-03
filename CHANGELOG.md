@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.11...v1.1.12) (2019-02-03)
+
+
+### Bug Fixes
+
+* **Fa:** restore icon angledoubleleft and arrowsalt ([fd43263](https://github.com/bootstrap-styled/rsg-components/commit/fd43263))
+
 ## [1.1.11](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.10...v1.1.11) (2019-02-03)
 
 
