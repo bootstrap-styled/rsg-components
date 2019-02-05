@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.12...v1.1.13) (2019-02-05)
+
+
+### Bug Fixes
+
+* **package:** update react-group to version 3.0.0 ([8751024](https://github.com/bootstrap-styled/rsg-components/commit/8751024))
+
 ## [1.1.12](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.11...v1.1.12) (2019-02-03)
 
 
