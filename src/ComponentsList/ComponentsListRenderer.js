@@ -224,7 +224,7 @@ const ComponentsListRenderer = styled(ComponentsListRendererUnstyled)`
             cursor: ${props.theme.styleguide['$rsg-component-list-heading-button-cursor']};
           }
         }
-      & .level-0 {
+      & .level-0, .level-1, .level-2 {
         color: ${props.theme.styleguide['$rsg-component-list-heading-color']};
   ${hover(
     `
