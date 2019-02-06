@@ -1,3 +1,10 @@
+## [1.1.14](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.13...v1.1.14) (2019-02-06)
+
+
+### Bug Fixes
+
+* **ComponentRenderList:** added css class selector for level-1 and 2. ([72ab4c4](https://github.com/bootstrap-styled/rsg-components/commit/72ab4c4))
+
 ## [1.1.13](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.12...v1.1.13) (2019-02-05)
 
 
