@@ -51,10 +51,9 @@ export const propTypes = {
   /**
    * @ignore
    */
-  className: PropTypes.string, // eslint-disable-line react/require-default-props
+  className: PropTypes.string, // eslint-disable-line
   code: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  editorConfig: PropTypes.object, // eslint-disable-line react/require-default-props
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     styleguide: PropTypes.shape({
@@ -88,7 +87,7 @@ export const propTypes = {
    * Replace or remove a className from the component.
    * See example <a href="https://www.npmjs.com/package/map-to-css-modules" target="_blank">here</a>.
    */
-  cssModule: PropTypes.object, // eslint-disable-line react/require-default-props
+  cssModule: PropTypes.object, // eslint-disable-line
 };
 /* eslint-enable react/require-default-props */
 
@@ -122,13 +121,11 @@ class EditorUnstyled extends Component {
     const {
       className,
       cssModule,
-      ...attributes
     } = omit(this.props, ['theme']);
 
     return (
       <SimpleEditor
         className={mapToCssModules(cn(className, 'rsg-editor'), cssModule)}
-        {...attributes}
         value={this.state.code}
         onValueChange={this.handleChange}
         highlight={highlight}
@@ -158,8 +155,8 @@ const Editor = styled(EditorUnstyled)`
       & textarea:focus {
         isolate: ${props.theme.styleguide['$rsg-editor-focus-isolate']};
         outline: ${props.theme.styleguide['$rsg-editor-focus-outline']};
-        borderColor: ${props.theme.styleguide['$rsg-editor-focus-border-color']} !important;
-        boxShadow: ${props.theme.styleguide['$rsg-editor-focus-box-shadow']};
+        border-color: ${props.theme.styleguide['$rsg-editor-focus-border-color']} !important;
+        box-shadow: ${props.theme.styleguide['$rsg-editor-focus-box-shadow']};
       }
       & .token.comment,
         & .token.doctype,

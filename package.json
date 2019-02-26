@@ -232,7 +232,7 @@
     "@bootstrap-styled/css-mixins": "^2.0.5",
     "@bootstrap-styled/navigation-bar": "^1.9.3",
     "@bootstrap-styled/provider": "^1.4.2",
-    "@bootstrap-styled/v4": "^3.0.0",
+    "@bootstrap-styled/v4": "^3.0.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
