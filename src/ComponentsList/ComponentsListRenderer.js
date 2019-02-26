@@ -167,7 +167,7 @@ class ComponentsListRendererUnstyled extends React.Component { // eslint-disable
           sectionDepth,
         }) => (
           <Li
-            key={href}
+            key={Math.random()}
             className={`list-${sectionDepth}`}
           >
             {heading ? (

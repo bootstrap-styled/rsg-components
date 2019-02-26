@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getUrl from 'react-styleguidist/lib/utils/getUrl';
+import getUrl from 'react-styleguidist/lib/client/utils/getUrl';
 import ComponentsListRenderer from './ComponentsListRenderer';
 
 function ComponentsList({

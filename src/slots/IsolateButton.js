@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import getUrl from 'react-styleguidist/lib/utils/getUrl';
+import getUrl from 'react-styleguidist/lib/client/utils/getUrl';
 import ToolbarButton from '../ToolbarButton';
 
 const IsolateButton = ({ name, example, isolated }) =>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { DOCS_COMPONENTS } from 'react-styleguidist/scripts/consts';
+import { DOCS_COMPONENTS } from 'react-styleguidist/lib/scripts/consts';
 import omit from 'lodash.omit';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';

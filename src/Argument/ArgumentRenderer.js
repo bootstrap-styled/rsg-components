@@ -70,11 +70,8 @@ const ArgumentRendererUnstyled = (props) => {
     type = type.expression;
   }
 
-  return (
-    <Group
-      className={mapToCssModules(cn(className, 'rsg-argument', { block }), cssModule)}
-      {...attributes}
-    >
+  const content = (
+    <Group className={mapToCssModules(cn(className, 'rsg-argument'), cssModule)} {...attributes}>
       {returns && 'Returns'}
       {name && (
         <span>
@@ -89,10 +86,16 @@ const ArgumentRendererUnstyled = (props) => {
           {!!defaultValue && `=${defaultValue}`}
         </Type>
       )}
-      {type && description && ' — '}
+      {type && description && '—'}
       {description && <Markdown text={`${description}`} inline />}
     </Group>
   );
+
+  if (block) {
+    return <div className={mapToCssModules(cn(className, 'rsg-argument', { 'mb-2': block }), cssModule)} {...attributes}>{content}</div>;
+  }
+
+  return content;
 };
 
 ArgumentRendererUnstyled.defaultProps = defaultProps;

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import isEmpty from 'lodash.isempty';
 
-import Props from 'react-styleguidist/lib/rsg-components/Props';
+import Props from 'react-styleguidist/lib/client/rsg-components/Props';
 import Methods from '../Methods';
 
 export default function Usage({ props: { props, methods } }) {
