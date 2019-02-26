@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from '@bootstrap-styled/v4/lib/Button';
 import P from '@bootstrap-styled/v4/lib/P';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import filterSectionsByName from 'react-styleguidist/lib/utils/filterSectionsByName';
+import filterSectionsByName from 'react-styleguidist/lib/client/utils/filterSectionsByName';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';

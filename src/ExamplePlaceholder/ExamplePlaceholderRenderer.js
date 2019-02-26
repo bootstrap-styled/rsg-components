@@ -6,7 +6,7 @@ import omit from 'lodash.omit';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import { DOCS_DOCUMENTING } from 'react-styleguidist/scripts/consts';
+import { DOCS_DOCUMENTING } from 'react-styleguidist/lib/scripts/consts';
 import Markdown from '../Markdown';
 
 export const defaultProps = {
