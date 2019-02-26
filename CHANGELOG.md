@@ -1,3 +1,13 @@
+## [2.0.1](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.0...v2.0.1) (2019-02-26)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade @bs/v4. ([b47ec8e](https://github.com/bootstrap-styled/rsg-components/commit/b47ec8e))
+* **docs:** removed usless testing line in documentaiton. ([bacd361](https://github.com/bootstrap-styled/rsg-components/commit/bacd361))
+* **documentation:** removed markdown error that created anchor twice. ([64732ab](https://github.com/bootstrap-styled/rsg-components/commit/64732ab))
+* **Editor:** corrected css mistake and removed spreading of props on SimpleEditor as it caused bug with library component. ([0a073f0](https://github.com/bootstrap-styled/rsg-components/commit/0a073f0))
+
 # [2.0.0](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.14...v2.0.0) (2019-02-26)
 
 
