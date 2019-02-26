@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.14...v2.0.0) (2019-02-26)
+
+
+### Performance Improvements
+
+* ⚡️ Updated to react-styleguide 9.0.1 ([0d293d7](https://github.com/bootstrap-styled/rsg-components/commit/0d293d7))
+
+
+### BREAKING CHANGES
+
+* y
+
+Issues: n
+
 ## [1.1.14](https://github.com/bootstrap-styled/rsg-components/compare/v1.1.13...v1.1.14) (2019-02-06)
 
 
