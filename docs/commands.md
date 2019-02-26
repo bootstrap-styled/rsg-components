@@ -10,11 +10,6 @@ Run unit test:
 $ npm test
 ```
 
-```js
-import React from 'react';
-<p>hello</p>
-```
-
 Watch unit test:
 
 ```bash
