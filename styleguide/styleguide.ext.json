@@ -31,9 +31,13 @@
     },
     {
       "name": "UI Components",
-      "components": "src/**/*.js",
+      "components": [
+        "src/**/[A-Z]*.js",
+        "src/**/[A-Z]*/index.js"
+      ],
       "ignore": [
-        "src/**/index.js"
+        "src/**/index.js",
+        "src/fontawesome.config.js"
       ],
       "sectionDepth": 1
     },
