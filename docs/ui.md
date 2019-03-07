@@ -3,3 +3,9 @@ The package contains all **rsg-components** from [react-styleguidist](https://gi
 `StyleGuideRenderer` is the global layout component, other components are not described in details here. 
 
 They can be used to create new documentation layout for Bootstrap Styled.
+
+```js
+const fa = require('$PACKAGE_NAME/lib/fontawesome.config.js');
+console.log(fa);
+<div>{fa.toString()}</div>
+```
