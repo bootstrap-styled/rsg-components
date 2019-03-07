@@ -1,3 +1,11 @@
+## [2.0.3](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.2...v2.0.3) (2019-03-07)
+
+
+### Bug Fixes
+
+* **anchor:** corrected wrong import that was supposed to generate anchors for SectionHeading. ([191cf5e](https://github.com/bootstrap-styled/rsg-components/commit/191cf5e))
+* **PreRenderer:** added Editor javascript colouring theme to Pre. ([92f9ada](https://github.com/bootstrap-styled/rsg-components/commit/92f9ada))
+
 ## [2.0.2](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.1...v2.0.2) (2019-03-07)
 
 
