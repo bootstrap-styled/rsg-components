@@ -1,1 +1,1 @@
-export { default } from './ExamplesRenderer';
+export { default } from './Examples';

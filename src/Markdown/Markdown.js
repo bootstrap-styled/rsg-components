@@ -13,7 +13,6 @@ import DetailsSummary from './Details/DetailsSummaryRenderer';
 import Link from '../Link';
 import Text from '../Text';
 import Para from '../Para';
-import './tomorrow.css';
 
 export const baseOverrides = {
   a: {
