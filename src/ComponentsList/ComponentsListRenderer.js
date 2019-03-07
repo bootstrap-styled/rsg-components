@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
+import debounce from 'lodash.debounce';
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import Link from '../Link';
@@ -153,7 +154,6 @@ class ComponentsListRendererUnstyled extends React.Component { // eslint-disable
     if (!itemList.length) {
       return null;
     }
-
     return (
       <Ul
         className={mapToCssModules(cn(className, 'rsg-component-list'), cssModule)}
@@ -167,15 +167,15 @@ class ComponentsListRendererUnstyled extends React.Component { // eslint-disable
           sectionDepth,
         }) => (
           <Li
-            key={Math.random()}
+            key={href}
             className={`list-${sectionDepth}`}
           >
             {heading ? (
               <div
                 role="button"
                 tabIndex="0"
-                onClick={() => this.onClick(visibleName)}
-                onKeyPress={() => this.onClick(visibleName)}
+                onClick={debounce(() => this.onClick(visibleName), 300)}
+                onKeyPress={debounce(() => this.onClick(visibleName), 300)}
                 className="list-button font-weight-bold d-flex align-items-center justify-content-between"
               >
                 <Link
