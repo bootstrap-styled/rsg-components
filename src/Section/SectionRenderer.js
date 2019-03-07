@@ -5,7 +5,7 @@ import omit from 'lodash.omit';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import SectionHeading from '../SectionHeading';
+import SectionHeading from 'react-styleguidist/lib/client/rsg-components/SectionHeading';
 import Markdown from '../Markdown';
 
 export const defaultProps = {
