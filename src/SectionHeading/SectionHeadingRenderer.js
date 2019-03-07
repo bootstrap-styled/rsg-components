@@ -106,7 +106,7 @@ const SectionHeadingRendererUnstyled = (props) => {
       {...attributes}
     >
       <Heading level={headingLevel} id={id}>
-        <A tag={href && 'div'} className={`section-name level-${headingLevel} ${deprecated ? 'deprecated' : ''} d-flex justify-content-between`} href={href}>
+        <A className={`section-name level-${headingLevel} ${deprecated ? 'deprecated' : ''} d-flex justify-content-between`} href={href}>
           <div className="no-print">
             <FontAwesomeIcon
               className="anchor"
