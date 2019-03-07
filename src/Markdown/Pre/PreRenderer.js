@@ -19,6 +19,21 @@ export const defaultProps = {
       '$rsg-markdown-pre-border': '1px #e8e8e8 solid',
       '$rsg-markdown-pre-border-radius': '3px',
       '$rsg-markdown-pre-margin': '0 0 16px 0',
+      '$rsg-editor-transition': 'all ease-in-out .1s',
+      '$rsg-editor-code-comment-color': '#6d6d6d',
+      '$rsg-editor-code-punctuation-color': '#999',
+      '$rsg-editor-code-namespace-opacity': '0.7',
+      '$rsg-editor-code-property-color': '#905',
+      '$rsg-editor-code-deleted-color': '#905',
+      '$rsg-editor-code-string-color': '#690',
+      '$rsg-editor-code-inserted-color': '#690',
+      '$rsg-editor-code-operator-color': '#9a6e3a',
+      '$rsg-editor-code-keyword-color': '#1673b1',
+      '$rsg-editor-code-function-color': '#DD4A68',
+      '$rsg-editor-code-variable-color': '#e90',
+      '$rsg-editor-code-font-weight': 'bold',
+      '$rsg-editor-code-font-style': 'italic',
+      '$rsg-editor-code-cursor': 'help',
     },
   },
 };
@@ -42,6 +57,21 @@ export const propTypes = {
       '$rsg-markdown-pre-border': PropTypes.string,
       '$rsg-markdown-pre-border-radius': PropTypes.string,
       '$rsg-markdown-pre-margin': PropTypes.string,
+      '$rsg-editor-isolate': PropTypes.bool,
+      '$rsg-editor-code-comment-color': PropTypes.string,
+      '$rsg-editor-code-punctuation-color': PropTypes.string,
+      '$rsg-editor-code-namespace-opacity': PropTypes.string,
+      '$rsg-editor-code-property-color': PropTypes.string,
+      '$rsg-editor-code-deleted-color': PropTypes.string,
+      '$rsg-editor-code-string-color': PropTypes.string,
+      '$rsg-editor-code-inserted-color': PropTypes.string,
+      '$rsg-editor-code-operator-color': PropTypes.string,
+      '$rsg-editor-code-keyword-color': PropTypes.string,
+      '$rsg-editor-code-function-color': PropTypes.string,
+      '$rsg-editor-code-variable-color': PropTypes.string,
+      '$rsg-editor-code-font-weight': PropTypes.string,
+      '$rsg-editor-code-font-style': PropTypes.string,
+      '$rsg-editor-code-cursor': PropTypes.string,
     }),
   }),
   /**
@@ -88,6 +118,83 @@ const PreRenderer = styled(PreRendererUnstyled)`
       border-radius: ${props.theme.styleguide['$rsg-markdown-pre-border-radius']};
       margin: ${props.theme.styleguide['$rsg-markdown-pre-margin']};
     }
+    & .token.comment,
+        & .token.doctype,
+          & .token.cdata {
+            isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+            color: ${props.theme.styleguide['$rsg-editor-code-comment-color']};
+      }
+      & .token.punctuation {
+        isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+        color: ${props.theme.styleguide['$rsg-editor-code-punctuation-color']};
+      }
+      & .namespace {
+        isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+        opacity: ${props.theme.styleguide['$rsg-editor-code-namespace-opacity']};
+      }
+      & .token.property,
+        & .token.tag,
+          & .token.boolean,
+            & .token.number,
+              & .token.constant,
+                & .token.symbol {
+                  isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+                  color: ${props.theme.styleguide['$rsg-editor-code-property-color']};
+      }
+      & .token.deleted {
+        isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+        color: ${props.theme.styleguide['$rsg-editor-code-deleted-color']};
+      }
+      & .token.selector,
+        & .token.attr-name,
+          & .token.string,
+            & .token.char,
+              & .token.builtin {
+                isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+                color: ${props.theme.styleguide['$rsg-editor-code-string-color']};
+      }
+      & .token.inserted {
+        isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+        color: ${props.theme.styleguide['$rsg-editor-code-inserted-color']};
+      }
+      & .token.operator,
+        & .token.entity,
+          & .token.url,
+            & .language-css .token.string,
+              & .style .token.string {
+                isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+                color: ${props.theme.styleguide['$rsg-editor-code-operator-color']};
+      }
+      & .token.atrule,
+        & .token.attr-value,
+          & .token.keyword {
+            isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+            color: ${props.theme.styleguide['$rsg-editor-code-keyword-color']};
+      }
+      & .token.function,
+        & .token.class-name{
+          isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+          color: ${props.theme.styleguide['$rsg-editor-code-function-color']};
+      }
+      & .token.regex,
+        & .token.important,
+          & .token.variable {
+            isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+            color: ${props.theme.styleguide['$rsg-editor-code-variable-color']};
+      }
+      & .token.important,
+        & .token.bold{
+          isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+          font-weight: ${props.theme.styleguide['$rsg-editor-code-font-weight']};
+      }
+      & .token.italic {
+        isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+        font-style: ${props.theme.styleguide['$rsg-editor-code-font-style']};
+      }
+      & .token.entity {
+        isolate: ${props.theme.styleguide['$rsg-editor-isolate']};
+        cursor: ${props.theme.styleguide['$rsg-editor-code-cursor']};
+      }
  `}
 `;
 
