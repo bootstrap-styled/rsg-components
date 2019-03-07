@@ -61,7 +61,7 @@ const config = createConfig({
     slots: join(__dirname, 'src/slots'),
     TabButtonRenderer: join(__dirname, 'src/TabButton/TabButtonRenderer.js'),
     TableRenderer: join(__dirname, 'src/Table/TableRenderer.js'),
-    TableOfContents: join(__dirname, 'src/TableOfContents/TableOfContents'),
+    TableOfContents: join(__dirname, 'src/TableOfContents'),
     TableOfContentsRenderer: join(__dirname, 'src/TableOfContents/TableOfContentsRenderer.js'),
     TextRenderer: join(__dirname, 'src/Text/TextRenderer.js'),
     ToolbarButtonRenderer: join(__dirname, 'src/ToolbarButton/ToolbarButtonRenderer.js'),
