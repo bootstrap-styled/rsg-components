@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.1...v2.0.2) (2019-03-07)
+
+
+### Bug Fixes
+
+* **animation bug:** added debounce function. ([aca730c](https://github.com/bootstrap-styled/rsg-components/commit/aca730c))
+* **SectionHeadingRenderer:** removed the tag props that was wrongly attributed. ([49ad142](https://github.com/bootstrap-styled/rsg-components/commit/49ad142))
+
 ## [2.0.1](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.0...v2.0.1) (2019-02-26)
 
 
