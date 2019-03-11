@@ -2,6 +2,10 @@ const { join } = require('path');
 const { createConfig } = require('@rollup-umd/documentation');
 const { name } = require('./package.json');
 const config = createConfig({
+  moduleAliases: {
+    $PACKAGE_NAME: join(__dirname),
+    [name]: join(__dirname),
+  },
   styleguideComponents: {
     // components
     StyleGuide: join(__dirname, 'src/StyleGuide'),
@@ -71,7 +75,5 @@ const config = createConfig({
     WelcomeRenderer: join(__dirname, 'src/Welcome/WelcomeRenderer.js'),
   },
 });
-
-config.webpackConfig.resolve.alias[name] = __dirname;
 
 module.exports = config;
