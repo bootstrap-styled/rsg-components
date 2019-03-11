@@ -1,3 +1,16 @@
+## [2.0.4](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.3...v2.0.4) (2019-03-11)
+
+
+### Bug Fixes
+
+* **dependencies:** fixing acorn and acorn-jsx ([fe403be](https://github.com/bootstrap-styled/rsg-components/commit/fe403be))
+* **dependencies:** remove sinon ([378996d](https://github.com/bootstrap-styled/rsg-components/commit/378996d))
+* **dependencies:** upgrade all dependencies ([4f4299b](https://github.com/bootstrap-styled/rsg-components/commit/4f4299b))
+* **doc:** stop documentation ([c2628f5](https://github.com/bootstrap-styled/rsg-components/commit/c2628f5))
+* **react-styleguidist components:** added missing components. ([5943756](https://github.com/bootstrap-styled/rsg-components/commit/5943756))
+* **stlyeguide.config:** corected wrong import. ([feef04b](https://github.com/bootstrap-styled/rsg-components/commit/feef04b))
+* **testing markdown imports:** WIP. ([7bdd34b](https://github.com/bootstrap-styled/rsg-components/commit/7bdd34b))
+
 ## [2.0.3](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.2...v2.0.3) (2019-03-07)
 
 
