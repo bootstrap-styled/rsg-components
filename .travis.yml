@@ -66,14 +66,12 @@ jobs:
 
     # Job: Page
     - stage: deploy
-      if: branch = testing-broken-v9 AND type = push AND fork = false
+      if: branch = master AND type = push AND fork = false
       node_js:
         - 'lts/*'
       script:
-        - npx @rollup-umd/deploy --yarn
-#        - targetVersion=$(git describe --tags `git rev-list --tags --max-count=1`)
-#        - npx @rollup-umd/deploy --target-version "${targetVersion}" --yarn
-        - exit 1
+        - targetVersion=$(git describe --tags `git rev-list --tags --max-count=1`)
+        - npx @rollup-umd/deploy --target-version ${targetVersion}
       deploy:
         - provider: pages
           skip_cleanup: true
