@@ -1,1 +1,1 @@
-export { default } from './ReactComponentRenderer';
+export { default } from './ReactComponent';
