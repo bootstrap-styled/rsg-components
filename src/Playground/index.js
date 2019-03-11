@@ -1,1 +1,1 @@
-export { default } from './PlaygroundRenderer';
+export { default } from './Playground';

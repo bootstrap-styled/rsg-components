@@ -9,3 +9,16 @@
 
 Create a packages for your groups or your organizations with [react-styleguidist](https://react-styleguidist.js.org/) configuration and use [Bootstrap Styled](https://bootstrap-styled.github.io/bootstrap-styled/) to create your layout ([Read more](https://rollup-umd.github.io/documentation)).
   
+```jsx 
+import React from 'react';
+import Button from '@bootstrap-styled/v4/lib/Button';
+  
+```
+  
+```jsx
+import React from 'react';
+import Button from '@bootstrap-styled/v4/lib/Button';
+
+<Button>Test</Button>
+
+```

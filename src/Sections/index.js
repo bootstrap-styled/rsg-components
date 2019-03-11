@@ -1,1 +1,1 @@
-export { default } from './SectionsRenderer';
+export { default } from './Sections';

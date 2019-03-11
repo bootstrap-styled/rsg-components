@@ -1,1 +1,1 @@
-export { default } from './ComponentsRenderer';
+export { default } from './Components';

@@ -1,1 +1,1 @@
-export { default } from './StyleGuideRenderer';
+export { default } from './StyleGuide';

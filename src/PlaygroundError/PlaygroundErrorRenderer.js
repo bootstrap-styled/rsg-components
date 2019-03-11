@@ -75,7 +75,7 @@ const PlaygroundErrorRenderer = styled(PlaygroundErrorRendererUnstyled)`
       margin: ${props.theme.styleguide['$rsg-playground-error-margin']};
       line-height: ${props.theme.styleguide['$rsg-playground-error-line-height']};
       font-size: ${props.theme.styleguide['$rsg-playground-error-font-size']};
-      font-family; ${props.theme.styleguide['$rsg-playground-error-font-family']};
+      font-family: ${props.theme.styleguide['$rsg-playground-error-font-family']};
       color: ${props.theme.styleguide['$rsg-playground-error-color']};
       white-space: ${props.theme.styleguide['$rsg-playground-error-white-space']};
     }
