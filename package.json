@@ -247,7 +247,7 @@
     "markdown-to-jsx": "^6.9.1",
     "prop-types": "^15.7.2",
     "react-group": "^3.0.0",
-    "react-transition-group": "^2.6.0"
+    "react-transition-group": "^3.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.4",
