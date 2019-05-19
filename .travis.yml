@@ -7,23 +7,12 @@ branches:
   except:
     - gh-pages # will be deployed to, no need to build it
 
-#cache:
-#  directories:
-#    - node_modules
+cache:
+  directories:
+    - node_modules
 
 before_install:
     - npm install -g npm
-    # const
-    - export PACKAGE_NAME=$(node -p "require('./package.json').name")
-    - export PACKAGE_VERSION=$(node -p "require('./package.json').version")
-    - export SONAR_VERSION=${PACKAGE_VERSION}-b${TRAVIS_BUILD_ID}-${TRAVIS_BRANCH}
-    - export NODE_VERSION=$(node --version)
-    - export NPM_VERSION=$(npm --version)
-
-    # logging
-    - npm --version || echo npm not installed
-    - node --version || echo node not installed
-    - echo "package version $PACKAGE_VERSION"
 
 stages:
   - deploy
@@ -41,7 +30,7 @@ jobs:
         - '10'
         - '8'
       script:
-        - npm run build
+        - npx @rollup-umd/build
     # Job: Test
     - stage: test
       node_js:
@@ -52,8 +41,7 @@ jobs:
         sonarcloud:
           organization: $(echo $TRAVIS_REPO_SLUG | awk -F '/' '{print $1}')
       script:
-        - npm run test
-        - if [[ "$TRAVIS_BRANCH" != greenkeeper* && -n "$SONAR_TOKEN" ]]; then sonar-scanner -Dsonar.projectVersion=${SONAR_VERSION}; fi
+        - npx @rollup-umd/test
 
     # Job: Release
     - stage: release
