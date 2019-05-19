@@ -8,7 +8,7 @@ import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import SideBar from '../SideBar';
+import SideBarDefault from '../SideBar';
 import FooterRenderer from '../FooterRenderer';
 import Ribbon from '../Ribbon';
 import '../fontawesome.config';
@@ -17,7 +17,7 @@ import defaultTheme from '../theme';
 /* eslint-disable react/prop-types */
 export const defaultProps = {
   hasSidebar: true,
-  SideBar,
+  SideBar: SideBarDefault,
   theme: defaultTheme,
   reset: true,
   injectGlobal: true,
