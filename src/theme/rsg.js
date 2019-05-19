@@ -1,4 +1,3 @@
-
 export function makeTheme(userTheme = { styleguide: {} }) {
   const newTheme = { styleguide: {} };
   const v = newTheme.styleguide;
@@ -122,6 +121,7 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   };
   v['$rsg-styleguide-sidebar-open-button-transition'] = u['$rsg-styleguide-sidebar-open-button-transition'] || 'transform ease-out 500ms';
   v['$rsg-styleguide-sidebar-open-button-transform'] = u['$rsg-styleguide-sidebar-open-button-transform'] || 'translateX(193px) rotate(90deg)';
+  v['$rsg-styleguide-sidebar-open-button-color'] = u['$rsg-styleguide-sidebar-open-button-color'] || '#fff';
   v['$rsg-styleguide-sidebar-close-button-transition'] = u['$rsg-styleguide-sidebar-close-button-transition'] || 'transform 700ms';
   v['$rsg-styleguide-sidebar-close-button-z-index'] = u['$rsg-styleguide-sidebar-close-button-z-index'] || '-500';
   v['$rsg-styleguide-sidebar-close-button-transform'] = u['$rsg-styleguide-sidebar-close-button-transform'] || {
