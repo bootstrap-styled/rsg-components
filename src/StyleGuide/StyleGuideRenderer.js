@@ -138,6 +138,7 @@ export const propTypes = {
       '$rsg-styleguide-sidebar-open-button-transform': PropTypes.string,
       '$rsg-styleguide-sidebar-close-button-transition': PropTypes.string,
       '$rsg-styleguide-sidebar-close-button-z-index': PropTypes.string,
+      '$rsg-styleguide-sidebar-open-button-color': PropTypes.string,
       '$rsg-styleguide-sidebar-close-button-transform': PropTypes.shape({
         sm: PropTypes.string,
         md: PropTypes.string,
@@ -395,7 +396,7 @@ const StyleGuideRendererStyled = styled(StyleGuideRendererUnstyled)`
     props.theme['$grid-breakpoints'],
     `
       transform: ${props.theme.styleguide['$rsg-styleguide-sidebar-open-button-transform']};
-      color: white;
+      color: ${props.theme.styleguide['$rsg-styleguide-sidebar-open-button-color']};
     `
   )}
     }
