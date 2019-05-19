@@ -163,6 +163,12 @@
     "build:readme",
     "lint-staged"
   ],
+  "ncurc": {
+    "reject": [
+      "acorn",
+      "acorn-jsx"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
@@ -185,6 +191,7 @@
     "@rollup-umd/build": "^1.0.3",
     "@rollup-umd/deploy": "^1.1.1",
     "@rollup-umd/documentation": "^2.0.2",
+    "@rollup-umd/ncu": "^1.0.9",
     "@rollup-umd/test": "^1.0.5",
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/git": "^7.0.8",
