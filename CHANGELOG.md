@@ -1,3 +1,17 @@
+# [2.1.0](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.4...v2.1.0) (2019-05-19)
+
+
+### Bug Fixes
+
+* **dependencies:** Install CI dependencies ([c247217](https://github.com/bootstrap-styled/rsg-components/commit/c247217))
+* **dependencies:** Install CI dependencies ([f6066fe](https://github.com/bootstrap-styled/rsg-components/commit/f6066fe))
+* **dependencies:** upgrade all dependencies ([34a4a11](https://github.com/bootstrap-styled/rsg-components/commit/34a4a11))
+
+
+### Features
+
+* **dependencies:** upgrade all dependencies, added SideBar props to passe a custom components SideBar to the Layout ([0437b3d](https://github.com/bootstrap-styled/rsg-components/commit/0437b3d))
+
 ## [2.0.4](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.3...v2.0.4) (2019-03-11)
 
 
