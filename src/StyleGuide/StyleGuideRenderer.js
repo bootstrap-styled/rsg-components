@@ -8,7 +8,7 @@ import { hover } from '@bootstrap-styled/css-mixins/lib/hover';
 import styled from 'styled-components';
 import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
-import SideBar from '../SideBar';
+import SideBarDefault from '../SideBar';
 import FooterRenderer from '../FooterRenderer';
 import Ribbon from '../Ribbon';
 import '../fontawesome.config';
@@ -17,6 +17,7 @@ import defaultTheme from '../theme';
 /* eslint-disable react/prop-types */
 export const defaultProps = {
   hasSidebar: true,
+  SideBar: SideBarDefault,
   theme: defaultTheme,
   reset: true,
   injectGlobal: true,
@@ -52,6 +53,8 @@ export const propTypes = {
   children: PropTypes.node.isRequired,
   /** An instance of TableOfContentsRenderer */
   toc: PropTypes.node.isRequired,
+  /** A side bar component to be used instead of default */
+  SideBar: PropTypes.any,
   /** Version of documentation. */
   version: PropTypes.string,
   /** Toggle sidebar style. */
@@ -187,6 +190,7 @@ class StyleGuideRendererUnstyled extends Component {
       logoFooter,
       cssModule,
       shadow,
+      SideBar,
       ...attributes
     } = omit(this.props, ['homepageUrl', 'theme', 'injectGlobal', 'reset']);
     const { isOpenSidebar } = this.state;
@@ -213,7 +217,7 @@ class StyleGuideRendererUnstyled extends Component {
                 icon={['fas', 'bars']}
               />
             </div>
-            <SideBar className={`sidebar ${isOpenSidebar ? 'sidebar-open' : 'sidebar-close'}`} version={version} logo={logoMenu} title={title} items={toc} shadow={shadow} />
+            {SideBar && <SideBar className={`sidebar ${isOpenSidebar ? 'sidebar-open' : 'sidebar-close'}`} version={version} logo={logoMenu} title={title} items={toc} shadow={shadow} />}
             <Ribbon />
           </div>
         )}
