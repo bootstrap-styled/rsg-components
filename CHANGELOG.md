@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.0...v2.1.1) (2019-05-19)
+
+
+### Bug Fixes
+
+* **theme:** added theme variable $rsg-styleguide-sidebar-open-button-color to edit the white button when SideBar is open ([a6ccaa0](https://github.com/bootstrap-styled/rsg-components/commit/a6ccaa0))
+
 # [2.1.0](https://github.com/bootstrap-styled/rsg-components/compare/v2.0.4...v2.1.0) (2019-05-19)
 
 
