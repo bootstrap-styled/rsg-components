@@ -526,7 +526,7 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   // New variables for markdown blockquote.
   v['$rsg-markdown-block-quote-border-width'] = u['$rsg-markdown-block-quote-border-width'] || '1px';
   v['$rsg-markdown-block-quote-border-left-width'] = u['$rsg-markdown-block-quote-border-left-width'] || '4px';
-  v['$rsg-markdown-block-quote-radius'] = u['$rsg-markdown-block-quote-radius'] || '5px';
+  v['$rsg-markdown-block-quote-border-radius'] = u['$rsg-markdown-block-quote-border-radius'] || '5px';
 
   // The following variables are part of the rsg original library source. They are overriding bs variables which we do not want, so they are commented in favor of BS variables.
   // v['$rsg-markdown-block-quote-margin'] = u['$rsg-markdown-block-quote-margin'] || `${v['$rsg-space'].md} ${v['$rsg-space'].md}`;
