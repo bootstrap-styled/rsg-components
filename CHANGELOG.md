@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.1...v2.1.2) (2019-05-20)
+
+
+### Bug Fixes
+
+* **theme:** fixed $rsg-markdown-block-quote-border-radius having wrong name in makeTheme ([de3d174](https://github.com/bootstrap-styled/rsg-components/commit/de3d174))
+
 ## [2.1.1](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.0...v2.1.1) (2019-05-19)
 
 
