@@ -36,6 +36,14 @@ export const defaultProps = {
         h5: '16px',
         h6: '15px',
       },
+      '$rsg-heading-font-weight': {
+        h1: 'normal',
+        h2: 'normal',
+        h3: 'normal',
+        h4: 'normal',
+        h5: 'bold',
+        h6: 'normal',
+      },
     },
   },
 };
@@ -58,6 +66,14 @@ export const propTypes = {
       '$rsg-heading-padding': PropTypes.string,
       '$rsg-heading-mobile-line-height': PropTypes.string,
       '$rsg-heading-mobile-font-size': PropTypes.shape({
+        h1: PropTypes.string,
+        h2: PropTypes.string,
+        h3: PropTypes.string,
+        h4: PropTypes.string,
+        h5: PropTypes.string,
+        h6: PropTypes.string,
+      }),
+      '$rsg-heading-font-weight': PropTypes.shape({
         h1: PropTypes.string,
         h2: PropTypes.string,
         h3: PropTypes.string,
@@ -115,23 +131,28 @@ const HeadingRenderer = styled(HeadingRendererUnstyled)`
       }
       &.rsg-heading.h1 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h1};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h1};
       }
       &.rsg-heading.h2 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h2};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h2};
       }
       &.rsg-heading.h3 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h3};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h3};
       }
       &.rsg-heading.h4 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h4};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h4};
       }
       &.rsg-heading.h5 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h5};
-        font-weight: 'bold',
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h5};
       }
       &.rsg-heading.h6 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h6};
-        font-style: 'italic',
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h6};
+        font-style: 'italic';
       }
     `
   )}
