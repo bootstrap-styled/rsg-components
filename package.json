@@ -197,7 +197,7 @@
     "@semantic-release/git": "^7.0.8",
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.7",
-    "acorn": "^6.0.2",
+    "acorn": "^7.0.0",
     "acorn-jsx": "^5.0.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
