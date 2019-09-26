@@ -1,3 +1,11 @@
+## [2.1.3](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.2...v2.1.3) (2019-09-26)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade many dependencies ([550114a](https://github.com/bootstrap-styled/rsg-components/commit/550114a))
+* **theme:** added font variables for all headings ([6b90b65](https://github.com/bootstrap-styled/rsg-components/commit/6b90b65))
+
 ## [2.1.2](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.1...v2.1.2) (2019-05-20)
 
 
