@@ -142,6 +142,14 @@ export function makeTheme(userTheme = { styleguide: {} }) {
     h5: '16px',
     h6: '15px',
   };
+  v['$rsg-heading-font-weight'] = u['$rsg-heading-font-weight'] || {
+    h1: 'normal',
+    h2: 'normal',
+    h3: 'normal',
+    h4: 'normal',
+    h5: 'bold',
+    h6: 'normal',
+  };
   v['$rsg-heading-font-size-h1'] = u['$rsg-heading-font-size-h1'] || '30px';
   v['$rsg-heading-h2'] = u['$rsg-heading-h2'] || '30px';
   v['$rsg-heading-h3'] = u['$rsg-heading-h3'] || '30px';
@@ -302,6 +310,7 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   };
   // link
   v['$rsg-link-hover-isolate'] = u['$rsg-link-hover-isolate'] || 'false';
+  v['$rsg-link-font-family'] = u['$rsg-link-font-family'] || 'inherit';
   // logo
   v['$rsg-logo-color'] = u['$rsg-logo-color'] || v['$rsg-white'];
   v['$rsg-logo-margin'] = u['$rsg-logo-margin'] || '0';

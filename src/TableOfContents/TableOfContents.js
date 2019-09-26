@@ -74,8 +74,8 @@ class TableOfContentsUnstyled extends Component {
     hasCollapse: false,
     isOpenCollapse: false,
   };
-
-  componentWillMount() {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillMount() {
     this.props.sections.map((section) => {
       const children = [...(section.sections || []), ...(section.components || [])];
       this.setState({
@@ -109,13 +109,16 @@ class TableOfContentsUnstyled extends Component {
       const sectionDepth = section.sectionDepth || 0;
       const childHashPath =
         sectionDepth === 0 && useHashId ? hashPath : [...hashPath, section.name];
-      return Object.assign({}, section, {
-        heading: !!section.name && children.length > 0,
-        content:
-          children.length > 0 &&
-          this.renderLevel(children, useRouterLinks, childHashPath, sectionDepth === 0),
-        collapse: isOpenCollapse,
-      });
+      return {
+        ...section,
+        ...{
+          heading: !!section.name && children.length > 0,
+          content:
+            children.length > 0 &&
+            this.renderLevel(children, useRouterLinks, childHashPath, sectionDepth === 0),
+          collapse: isOpenCollapse,
+        },
+      };
     });
     return (
       <ComponentsList

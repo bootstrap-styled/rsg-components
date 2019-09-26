@@ -10,14 +10,16 @@ import ExamplesRenderer from '../ExamplesRenderer';
 const children = (<h1>Test</h1>);
 
 const renderComponent = (props = {}) => shallow(
-  <ExamplesRenderer {...props}>
+  <ExamplesRenderer {...props} data-testid={`${name}-examples`}>
     {children}
   </ExamplesRenderer>
 );
 
 describe('<ExamplesRenderer />', () => {
   it('should render an ExamplesRenderer with children', () => {
-    const renderedComponent = renderComponent();
+    const renderedComponent = renderComponent({
+    	name: 'button',
+    });
     expect(renderedComponent.contains(children)).toEqual(true);
   });
 });

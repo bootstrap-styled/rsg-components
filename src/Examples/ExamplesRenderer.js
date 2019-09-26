@@ -32,6 +32,8 @@ export const propTypes = {
    * See example <a href="https://www.npmjs.com/package/map-to-css-modules" target="_blank">here</a>.
    */
   cssModule: PropTypes.object, // eslint-disable-line react/require-default-props
+  /** the name of the example */
+  name: PropTypes.string.isRequired,
 };
 
 
@@ -39,6 +41,7 @@ const ExamplesRendererUnstyled = (props) => {
   const {
     className,
     cssModule,
+    name,
     children,
     ...attributes
   } = omit(props, ['theme']);
@@ -46,6 +49,7 @@ const ExamplesRendererUnstyled = (props) => {
   return (
     <Article
       className={mapToCssModules(cn(className, 'rsg-examples'), cssModule)}
+      data-testid={`${name}-examples`}
       {...attributes}
     >
       {children}

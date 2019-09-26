@@ -13,6 +13,7 @@ const renderComponent = (props = {}) => shallow(
 describe('<PlaygroundRenderer />', () => {
   it('should render an PlaygroundRenderer', () => {
     const renderedComponent = renderComponent({
+      exampleIndex: 0,
       name: 'PlaygroundRenderer content',
       preview: <p>Preview</p>,
       previewProps: {},
