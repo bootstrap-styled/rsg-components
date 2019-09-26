@@ -58,11 +58,14 @@ export const propTypes = {
    * See example <a href="https://www.npmjs.com/package/map-to-css-modules" target="_blank">here</a>.
    */
   cssModule: PropTypes.object, // eslint-disable-line react/require-default-props
+  /** @ignore */
+  exampleIndex: PropTypes.number.isRequired,
 };
 /* eslint-enable react/require-default-props */
 
 const PlaygroundRendererUnstyled = (props) => {
   const {
+    exampleIndex,
     className,
     name,
     preview,
@@ -77,6 +80,7 @@ const PlaygroundRendererUnstyled = (props) => {
   return (
     <div
       className={mapToCssModules(cn(className, 'rsg-playground'), cssModule)}
+      data-test-id={`${name}-example-${exampleIndex}`}
       {...attributes}
     >
       <div

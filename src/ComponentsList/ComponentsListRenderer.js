@@ -95,8 +95,8 @@ class ComponentsListRendererUnstyled extends React.Component { // eslint-disable
   state = {
     itemList: [],
   }
-
-  componentWillMount() {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillMount() {
     this.updateItems(this.props.items, () => {
       const newState = {};
       this.state.itemList.forEach(({
@@ -113,8 +113,8 @@ class ComponentsListRendererUnstyled extends React.Component { // eslint-disable
       this.setState(newState);
     });
   }
-
-  componentWillReceiveProps(nextProps) {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (this.props.items.length !== nextProps.items.length) {
       this.updateItems(nextProps.items);
     }

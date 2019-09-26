@@ -310,6 +310,7 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   };
   // link
   v['$rsg-link-hover-isolate'] = u['$rsg-link-hover-isolate'] || 'false';
+  v['$rsg-link-font-family'] = u['$rsg-link-font-family'] || 'inherit';
   // logo
   v['$rsg-logo-color'] = u['$rsg-logo-color'] || v['$rsg-white'];
   v['$rsg-logo-margin'] = u['$rsg-logo-margin'] || '0';

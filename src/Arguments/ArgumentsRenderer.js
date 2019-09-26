@@ -29,7 +29,7 @@ export const propTypes = {
     description: PropTypes.string,
   })).isRequired,
   /** Toggle heading style. */
-  heading: PropTypes.bool, // eslint-disable-line react/require-default-props  /** Theme variables. Can be: */
+  heading: PropTypes.bool, // eslint-disable-line react/require-default-props
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     styleguide: PropTypes.shape({

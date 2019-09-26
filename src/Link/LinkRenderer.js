@@ -11,6 +11,7 @@ export const defaultProps = {
   theme: {
     styleguide: {
       '$rsg-link-hover-isolate': 'false',
+      '$rsg-link-font-family': 'inherit',
     },
   },
 };
@@ -25,6 +26,7 @@ export const propTypes = {
   theme: PropTypes.shape({
     styleguide: PropTypes.shape({
       '$rsg-link-hover-isolate': PropTypes.string,
+      '$rsg-link-font-family': PropTypes.string,
     }),
   }),
   /**
@@ -56,6 +58,7 @@ LinkRendererUnstyled.propTypes = propTypes;
 const LinkRenderer = styled(LinkRendererUnstyled)` 
   ${(props) => `
     &.rsg-link {
+      font-family: ${props.theme.styleguide['$rsg-link-font-family']};
   ${hover(
     `
       isolation: ${props.theme.styleguide['$rsg-link-hover-isolate']};
