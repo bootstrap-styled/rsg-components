@@ -1,3 +1,11 @@
+## [2.1.4](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.3...v2.1.4) (2019-09-26)
+
+
+### Bug Fixes
+
+* **dependencies:** Upgrade many dependencies, react 16.9.0 ([7f7a468](https://github.com/bootstrap-styled/rsg-components/commit/7f7a468))
+* **documentation:** deploy release version ([9d2ed95](https://github.com/bootstrap-styled/rsg-components/commit/9d2ed95))
+
 ## [2.1.3](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.2...v2.1.3) (2019-09-26)
 
 
