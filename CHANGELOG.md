@@ -1,3 +1,10 @@
+## [2.1.5](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.4...v2.1.5) (2019-09-29)
+
+
+### Bug Fixes
+
+* **react-styleguidist:** downgrade and fixed react-styleguidist version to v9.1.2 ([74da5b0](https://github.com/bootstrap-styled/rsg-components/commit/74da5b0))
+
 ## [2.1.4](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.3...v2.1.4) (2019-09-26)
 
 
