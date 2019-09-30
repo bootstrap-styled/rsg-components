@@ -233,7 +233,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-lifecycles-compat": "^3.0.4",
-    "react-simple-code-editor": "^0.9.14",
+    "react-simple-code-editor": "^0.10.0",
     "react-styleguidist": "9.1.2",
     "react-test-renderer": "^16.9.0",
     "styled-components": "^4.2.0",
