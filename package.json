@@ -245,7 +245,7 @@
     "@bootstrap-styled/color": "^1.0.9",
     "@bootstrap-styled/css-mixins": "^2.0.7",
     "@bootstrap-styled/navigation-bar": "^1.9.5",
-    "@bootstrap-styled/provider": "^1.5.3",
+    "@bootstrap-styled/provider": "^2.0.0",
     "@bootstrap-styled/v4": "^3.1.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
