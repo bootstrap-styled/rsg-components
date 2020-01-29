@@ -1,3 +1,11 @@
+## [2.1.6](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.5...v2.1.6) (2020-01-29)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([3b97cd0](https://github.com/bootstrap-styled/rsg-components/commit/3b97cd07f6ee3a5b0e969af3ae2593fa4c9f4d47))
+* **theme:** added more theme variable to controle markdown titles ([ad8960a](https://github.com/bootstrap-styled/rsg-components/commit/ad8960adb21f828d8abc28040f8a0cd84a448c92))
+
 ## [2.1.5](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.4...v2.1.5) (2019-09-29)
 
 
