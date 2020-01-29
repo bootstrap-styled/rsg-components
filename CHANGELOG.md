@@ -1,3 +1,10 @@
+## [2.1.7](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.6...v2.1.7) (2020-01-29)
+
+
+### Bug Fixes
+
+* **theme:** fixing theme and anchor position ([3d6ac73](https://github.com/bootstrap-styled/rsg-components/commit/3d6ac734c640fd0388ef005619d22ce577fcea3c))
+
 ## [2.1.6](https://github.com/bootstrap-styled/rsg-components/compare/v2.1.5...v2.1.6) (2020-01-29)
 
 
