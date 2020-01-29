@@ -6,7 +6,6 @@ import mapToCssModules from 'map-to-css-modules/lib';
 import cn from 'classnames';
 import Heading from '../../Heading';
 
-
 const propTypes = {
   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
   children: PropTypes.node.isRequired,
@@ -16,7 +15,7 @@ const propTypes = {
    */
   cssModule: PropTypes.object, // eslint-disable-line react/require-default-props
   /** @ignore */
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     styleguide: PropTypes.shape({
@@ -53,6 +52,7 @@ const propTypes = {
 
 const defaultProps = {
   cssModule: null,
+  className: undefined,
   theme: {
     styleguide: {
       '$rsg-markdown-heading-line-height': '1',
