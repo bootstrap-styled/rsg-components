@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { withTheme } from 'styled-components';
 import A from '@bootstrap-styled/v4/lib/A';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { hoverFocusActive } from '@bootstrap-styled/css-mixins/lib/hover';
-import styled from 'styled-components';
+import bp from '@bootstrap-styled/css-mixins/lib/breakpoints';
+
+
 import cn from 'classnames';
 import omit from 'lodash.omit';
 import mapToCssModules from 'map-to-css-modules/lib';
@@ -21,7 +24,7 @@ export const defaultProps = {
       '$rsg-section-heading-section-name-text-decoration': 'underline',
       '$rsg-section-heading-section-name-cursor': 'pointer',
       '$rsg-section-heading-section-name-color': '#B31255',
-      '$rsg-section-heading-anchor-font-size': '15px',
+      '$rsg-section-heading-anchor-font-size': '0.8em',
       '$rsg-section-heading-anchor-font-weight': 'normal',
       '$rsg-section-heading-anchor-transform': 'rotate(-5deg)',
       '$rsg-section-heading-anchor-color': '#CCCCCC',
@@ -96,20 +99,21 @@ const SectionHeadingRendererUnstyled = (props) => {
     href,
     depth,
     deprecated,
+    theme,
     ...attributes
   } = omit(props, ['theme', 'slotProps', 'pagePerSection', 'slotName']);
 
   const headingLevel = Math.min(6, depth);
   return (
     <div
-      className={mapToCssModules(cn(className, 'rsg-section-heading'), cssModule)}
+      className={mapToCssModules(cn(className, 'rsg-section-heading position-relative'), cssModule)}
       {...attributes}
     >
       <Heading level={headingLevel} id={id}>
         <A className={`section-name level-${headingLevel} ${deprecated ? 'deprecated' : ''} d-flex justify-content-between`} href={href}>
           <div className="no-print">
             <FontAwesomeIcon
-              className="anchor"
+              className="anchor position-absolute"
               icon={['fas', 'link']}
             />
           </div>
@@ -150,6 +154,11 @@ const SectionHeadingRenderer = styled(SectionHeadingRendererUnstyled)`
           padding: ${props.theme.styleguide['$rsg-section-heading-anchor-padding']};
           display: ${props.theme.styleguide['$rsg-section-heading-anchor-display']};
           vertical-align: ${props.theme.styleguide['$rsg-section-heading-anchor-vertical-align']};
+          right: 1em;
+          ${bp.up('md', props.theme['$grid-breakpoints'], `
+            left: -1.5em;
+            right: auto;
+          `)}
         }
       }
       & .deprecated {
@@ -162,6 +171,7 @@ const SectionHeadingRenderer = styled(SectionHeadingRendererUnstyled)`
       & .toolbar {
         margin-left: ${props.theme.styleguide['$rsg-section-heading-toolbar-margin-left']};
       }
+      {}
       & .level-1 {
         color: ${props.theme.styleguide['$rsg-section-heading-1-color']};
       }
@@ -175,4 +185,4 @@ const SectionHeadingRenderer = styled(SectionHeadingRendererUnstyled)`
 SectionHeadingRenderer.defaultProps = defaultProps;
 SectionHeadingRenderer.propTypes = propTypes;
 /** @component */
-export default SectionHeadingRenderer;
+export default withTheme(SectionHeadingRenderer);

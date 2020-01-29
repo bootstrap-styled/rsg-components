@@ -135,6 +135,9 @@ HeadingRendererUnstyled.propTypes = propTypes;
 
 const HeadingRenderer = styled(HeadingRendererUnstyled)` 
   ${(props) => `
+    &.rsg-heading > a {
+      color: inherit;
+    }
     &.rsg-heading {
       margin: ${props.theme.styleguide['$rsg-heading-margin']};
       color: ${props.theme.styleguide['$rsg-heading-color']};
