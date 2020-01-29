@@ -24,17 +24,26 @@ const typoList = {
 export const defaultProps = {
   theme: {
     styleguide: {
+      '$rsg-heading-line-height': '1',
+      '$rsg-heading-font-size': {
+        h1: '40px',
+        h2: '38px',
+        h3: '36px',
+        h4: '34px',
+        h5: '32px',
+        h6: '30px',
+      },
       '$rsg-heading-margin': '0',
       '$rsg-heading-color': '#292b2c',
       '$rsg-heading-padding': '20px 0 15px 0',
       '$rsg-heading-mobile-line-height': '1',
       '$rsg-heading-mobile-font-size': {
-        h1: '30px',
-        h2: '24px',
-        h3: '20px',
-        h4: '18px',
-        h5: '16px',
-        h6: '15px',
+        h1: '38px',
+        h2: '36px',
+        h3: '34px',
+        h4: '32px',
+        h5: '30px',
+        h6: '28px',
       },
       '$rsg-heading-font-weight': {
         h1: 'normal',
@@ -42,7 +51,7 @@ export const defaultProps = {
         h3: 'normal',
         h4: 'normal',
         h5: 'bold',
-        h6: 'normal',
+        h6: 'bold',
       },
     },
   },
@@ -61,6 +70,15 @@ export const propTypes = {
   /** Theme variables. Can be: */
   theme: PropTypes.shape({
     styleguide: PropTypes.shape({
+      '$rsg-heading-line-height': PropTypes.string,
+      '$rsg-heading-font-size': PropTypes.shape({
+        h1: PropTypes.string,
+        h2: PropTypes.string,
+        h3: PropTypes.string,
+        h4: PropTypes.string,
+        h5: PropTypes.string,
+        h6: PropTypes.string,
+      }),
       '$rsg-heading-margin': PropTypes.string,
       '$rsg-heading-color': PropTypes.string,
       '$rsg-heading-padding': PropTypes.string,
@@ -127,7 +145,7 @@ const HeadingRenderer = styled(HeadingRendererUnstyled)`
     props.theme['$grid-breakpoints'],
     `
       &.rsg-heading {
-        line-height: ${props.theme.styleguide['$rsg-heading-line-height']};
+        line-height: ${props.theme.styleguide['$rsg-heading-mobile-line-height']};
       }
       &.rsg-heading.h1 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h1};
@@ -151,6 +169,40 @@ const HeadingRenderer = styled(HeadingRendererUnstyled)`
       }
       &.rsg-heading.h6 {
         font-size: ${props.theme.styleguide['$rsg-heading-mobile-font-size'].h6};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h6};
+        font-style: 'italic';
+      }
+    `
+  )}
+  ${bp.up(
+    'md',
+    props.theme['$grid-breakpoints'],
+    `
+      &.rsg-heading {
+        line-height: ${props.theme.styleguide['$rsg-heading-line-height']};
+      }
+      &.rsg-heading.h1 {
+        font-size: ${props.theme.styleguide['$rsg-heading-font-size'].h1};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h1};
+      }
+      &.rsg-heading.h2 {
+        font-size: ${props.theme.styleguide['$rsg-heading-font-size'].h2};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h2};
+      }
+      &.rsg-heading.h3 {
+        font-size: ${props.theme.styleguide['$rsg-heading-font-size'].h3};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h3};
+      }
+      &.rsg-heading.h4 {
+        font-size: ${props.theme.styleguide['$rsg-heading-font-size'].h4};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h4};
+      }
+      &.rsg-heading.h5 {
+        font-size: ${props.theme.styleguide['$rsg-heading-font-size'].h5};
+        font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h5};
+      }
+      &.rsg-heading.h6 {
+        font-size: ${props.theme.styleguide['$rsg-heading-font-size'].h6};
         font-weight: ${props.theme.styleguide['$rsg-heading-font-weight'].h6};
         font-style: 'italic';
       }

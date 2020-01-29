@@ -8,6 +8,22 @@
   "pagePerSection": true,
   "sections": [
     {
+      "name": "Level1",
+      "content": "docs/tests/level1.md",
+      "sections": [
+        {
+          "name": "level2",
+          "content": "docs/tests/level2.md",
+          "sections": [
+            {
+              "name": "level3",
+              "content": "docs/tests/level3.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Introduction",
       "content": "docs/introduction.md"
     },

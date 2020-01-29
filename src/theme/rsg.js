@@ -134,13 +134,22 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   v['$rsg-heading-color'] = u['$rsg-heading-color'] || v['$rsg-color-base'];
   v['$rsg-heading-padding'] = u['$rsg-heading-padding'] || '20px 0 15px 0';
   v['$rsg-heading-line-height'] = u['$rsg-heading-line-height'] || '1';
+  v['$rsg-heading-font-size'] = u['$rsg-heading-font-size'] || {
+    h1: '40px',
+    h2: '38px',
+    h3: '36px',
+    h4: '34px',
+    h5: '32px',
+    h6: '30px',
+  };
+  v['$rsg-heading-mobile-line-height'] = u['$rsg-heading-mobile-line-height'] || '1';
   v['$rsg-heading-mobile-font-size'] = u['$rsg-heading-mobile-font-size-h1'] || {
-    h1: '30px',
-    h2: '24px',
-    h3: '20px',
-    h4: '18px',
-    h5: '16px',
-    h6: '15px',
+    h1: '38px',
+    h2: '36px',
+    h3: '34px',
+    h4: '32px',
+    h5: '30px',
+    h6: '28px',
   };
   v['$rsg-heading-font-weight'] = u['$rsg-heading-font-weight'] || {
     h1: 'normal',
@@ -529,6 +538,35 @@ export function makeTheme(userTheme = { styleguide: {} }) {
   v['$rsg-table-cell-child-p-margin'] = u['$rsg-table-cell-child-p-margin'] || '0 0 0 0';
   // markdown
 
+  v['$rsg-markdown-heading-line-height'] = u['$rsg-markdown-heading-line-height'] || '1';
+  v['$rsg-markdown-heading-font-size'] = u['$rsg-markdown-heading-font-size'] || {
+    h1: '30px',
+    h2: '28px',
+    h3: '26px',
+    h4: '24px',
+    h5: '22px',
+    h6: '20px',
+  };
+  v['$rsg-markdown-heading-margin'] = u['$rsg-markdown-heading-margin'] || '0';
+  v['$rsg-markdown-heading-color'] = u['$rsg-markdown-heading-color'] || '#383b3d';
+  v['$rsg-markdown-heading-padding'] = u['$rsg-markdown-heading-padding'] || '20px 0 15px 0';
+  v['$rsg-markdown-heading-mobile-line-height'] = u['$rsg-markdown-heading-mobile-line-height'] || '1';
+  v['$rsg-markdown-heading-mobile-font-size'] = u['$rsg-markdown-heading-mobile-font-size'] || {
+    h1: '28px',
+    h2: '26px',
+    h3: '24px',
+    h4: '22px',
+    h5: '20px',
+    h6: '18px',
+  };
+  v['$rsg-markdown-heading-font-weight'] = u['$rsg-markdown-heading-font-weight'] || {
+    h1: '300',
+    h2: '300',
+    h3: '300',
+    h4: '300',
+    h5: '300',
+    h6: '300',
+  };
   v['$rsg-markdown-block-quote-color'] = u['$rsg-markdown-block-quote-color'] || v['$rsg-color-base'];
   v['$rsg-markdown-block-quote-font-family'] = u['$rsg-markdown-block-quote-font-family'] || v['$rsg-font-family-base'];
   v['$rsg-markdown-block-quote-line-height'] = u['$rsg-markdown-block-quote-line-height'] || '1.5';
